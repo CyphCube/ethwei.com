@@ -1,0 +1,7 @@
+baseURL = "https://ethwei.org/"
+languageCode = "en-us"
+title = "Ethwei: Simple. Secure. Decentralized."
+disableKinds = ["taxonomy", "term", "RSS", "section"]
+
+[params]
+description = "Ethwei is a Layer 1 blockchain purpose-engineered for real world asset tokenization. Bring property, commodities, credit, and equity on-chain with enterprise-grade security."
