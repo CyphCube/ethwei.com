@@ -6,6 +6,20 @@
 
   <title>{{ .Site.Title }}</title>
   <meta name="description" content="{{ .Site.Params.description }}" />
+  <link rel="canonical" href="{{ .Site.BaseURL }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta property="og:description" content="{{ .Site.Params.description }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ .Site.Title }}" />
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo.png" />
 
   <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -121,6 +135,10 @@
       <p>
         Ethwei is simple, secure and decentralized.<br />
         Under construction - stay tuned.
+      </p>
+
+      <p style="margin-top: 40px; font-size: clamp(1.4rem, 3vw, 2rem); color: #5BE06B; font-weight: 600;">
+        Testnet is on the way &mdash; build on Cosmos SDK
       </p>
     </div>
   </main>

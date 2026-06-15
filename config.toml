@@ -1,5 +1,5 @@
 baseURL = "https://ethwei.com/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Ethwei - Simple. Secure. Decentralized."
 disableKinds = ["taxonomy", "term", "RSS", "section"]
 
