@@ -28,20 +28,20 @@
   {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": {{ (printf "Blog — %s" .Site.Title) | jsonify }},
-    "description": {{ $desc | jsonify }},
-    "url": {{ .Permalink | jsonify }},
+    "name": {{ printf "Blog — %s" .Site.Title }},
+    "description": {{ $desc }},
+    "url": {{ .Permalink }},
     "publisher": {
       "@type": "Organization",
       "name": "Ethwei",
-      "logo": { "@type": "ImageObject", "url": {{ (printf "%simages/logo.png" .Site.BaseURL) | jsonify }} }
+      "logo": { "@type": "ImageObject", "url": {{ printf "%simages/logo.png" .Site.BaseURL }} }
     },
     "blogPost": [
       {{ range $i, $p := .Pages.ByDate.Reverse }}{{ if $i }},{{ end }}{
         "@type": "BlogPosting",
-        "headline": {{ $p.Title | jsonify }},
-        "url": {{ $p.Permalink | jsonify }},
-        "datePublished": {{ ($p.Date.Format "2006-01-02") | jsonify }}
+        "headline": {{ $p.Title }},
+        "url": {{ $p.Permalink }},
+        "datePublished": {{ $p.Date.Format "2006-01-02" }}
       }{{ end }}
     ]
   }

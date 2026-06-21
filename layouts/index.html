@@ -29,17 +29,17 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Ethwei",
-    "url": {{ .Site.BaseURL | jsonify }},
-    "logo": {{ (printf "%simages/logo.png" .Site.BaseURL) | jsonify }},
-    "description": {{ .Site.Params.description | jsonify }}
+    "url": {{ .Site.BaseURL }},
+    "logo": {{ printf "%simages/logo.png" .Site.BaseURL }},
+    "description": {{ .Site.Params.description }}
   }
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": {{ .Site.Title | jsonify }},
-    "url": {{ .Site.BaseURL | jsonify }}
+    "name": {{ .Site.Title }},
+    "url": {{ .Site.BaseURL }}
   }
   </script>
 
