@@ -21,6 +21,28 @@
   <meta name="twitter:description" content="{{ .Site.Params.description }}" />
   <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo.png" />
 
+  <meta property="og:site_name" content="Ethwei" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ethwei",
+    "url": {{ .Site.BaseURL | jsonify }},
+    "logo": {{ (printf "%simages/logo.png" .Site.BaseURL) | jsonify }},
+    "description": {{ .Site.Params.description | jsonify }}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ .Site.Title | jsonify }},
+    "url": {{ .Site.BaseURL | jsonify }}
+  }
+  </script>
+
   <link rel="icon" type="image/png" href="/favicon.png" />
 
   <style>

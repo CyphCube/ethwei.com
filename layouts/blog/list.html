@@ -4,16 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  {{ $desc := .Description | default .Site.Params.description }}
   <title>Blog — {{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Description | default .Site.Params.description }}" />
+  <meta name="description" content="{{ $desc }}" />
   <link rel="canonical" href="{{ .Permalink }}" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ethwei" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:title" content="Blog — {{ .Site.Title }}" />
-  <meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
+  <meta property="og:description" content="{{ $desc }}" />
   <meta property="og:image" content="{{ .Site.BaseURL }}images/logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog — {{ .Site.Title }}" />
+  <meta name="twitter:description" content="{{ $desc }}" />
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": {{ (printf "Blog — %s" .Site.Title) | jsonify }},
+    "description": {{ $desc | jsonify }},
+    "url": {{ .Permalink | jsonify }},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Ethwei",
+      "logo": { "@type": "ImageObject", "url": {{ (printf "%simages/logo.png" .Site.BaseURL) | jsonify }} }
+    },
+    "blogPost": [
+      {{ range $i, $p := .Pages.ByDate.Reverse }}{{ if $i }},{{ end }}{
+        "@type": "BlogPosting",
+        "headline": {{ $p.Title | jsonify }},
+        "url": {{ $p.Permalink | jsonify }},
+        "datePublished": {{ ($p.Date.Format "2006-01-02") | jsonify }}
+      }{{ end }}
+    ]
+  }
+  </script>
 
   <link rel="icon" type="image/png" href="/favicon.png" />
 
