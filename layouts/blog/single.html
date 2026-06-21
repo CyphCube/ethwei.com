@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ .Title }} — {{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Params.summary | default .Summary }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Params.summary | default .Summary }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo.png" />
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header.site {
+      width: 100%;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .site .logo { width: 44px; height: auto; }
+    .site nav { margin-left: auto; display: flex; gap: 28px; font-size: 0.95rem; }
+    .site nav a { color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .site nav a:hover, .site nav a.active { color: #5BE06B; }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .back { color: rgba(255,255,255,0.5); font-size: 0.9rem; display: inline-block; margin-bottom: 32px; }
+    .back:hover { color: #5BE06B; }
+
+    .category {
+      display: inline-block;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #5BE06B;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .meta { color: rgba(255,255,255,0.45); font-size: 0.9rem; margin-bottom: 40px; }
+
+    article { line-height: 1.85; color: rgba(255,255,255,0.85); font-size: 1.1rem; }
+    article p { margin-bottom: 22px; }
+    article h2 { color: #5BE06B; margin: 36px 0 16px; }
+    article a { color: #5BE06B; text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.5);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 600px) { main { padding: 40px 20px 64px; } }
+  </style>
+</head>
+
+<body>
+  <header class="site">
+    <a href="/"><img src="/images/logo.png" alt="Ethwei Logo" class="logo" /></a>
+  </header>
+
+  <main>
+    <a href="/blog/" class="back">&larr; Back to Blog</a>
+    <span class="category">{{ .Params.category | default "Article" }}</span>
+    <h1>{{ .Title }}</h1>
+    <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+    <article>{{ .Content }}</article>
+  </main>
+
+  <footer>@2026 Ethwei</footer>
+</body>
+</html>
