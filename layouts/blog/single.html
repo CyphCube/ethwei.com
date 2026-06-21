@@ -98,6 +98,9 @@
     <span class="category">{{ .Params.category | default "Article" }}</span>
     <h1>{{ .Title }}</h1>
     <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="" style="width:100%; border-radius:12px; margin-bottom:40px;" />
+    {{ end }}
     <article>{{ .Content }}</article>
   </main>
 
