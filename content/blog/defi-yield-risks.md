@@ -1,5 +1,5 @@
 ---
-title: "DeFi Yield Risks You Should Know Before You Start to Earn"
+title: "DeFi Yield Risks You Should Know and How to Earn Safely"
 date: 2026-06-21
 category: "DeFi"
 summary: "High APYs look great on a dashboard, but they hide real dangers — smart contract bugs, impermanent loss, liquidations, rug pulls, depegs, and more. Here's what to know before you deposit a dollar."
