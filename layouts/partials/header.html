@@ -3,12 +3,21 @@
 <header class="site">
   <a href="{{ $homeURL }}" aria-label="Ethwei home"><img src="/images/logo.png" alt="Ethwei" class="logo" /></a>
 
+  {{/* Header nav space for future items goes here (before the spacer) */}}
+
   <span class="spacer"></span>
 
-  <div class="lang">
-    {{ range hugo.Sites }}
-      <a href="{{ .Home.RelPermalink }}"{{ if eq .Language.Lang $curLang }} class="active"{{ end }}>{{ .Language.Label }}</a>
-    {{ end }}
+  <div class="lang-dd">
+    <button class="lang-btn" id="langToggle" type="button" aria-haspopup="true" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
+      <span>{{ .Site.Language.Label }}</span>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="lang-menu" id="langMenu">
+      {{ range hugo.Sites }}
+        <a href="{{ .Home.RelPermalink }}"{{ if eq .Language.Lang $curLang }} class="active"{{ end }}>{{ .Language.Label }}</a>
+      {{ end }}
+    </div>
   </div>
 
   <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
