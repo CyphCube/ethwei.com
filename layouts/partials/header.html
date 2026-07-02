@@ -5,10 +5,6 @@
 
   <span class="spacer"></span>
 
-  <nav class="main">
-    <a href="/blog/">{{ T "nav_blog" }}</a>
-  </nav>
-
   <div class="lang">
     {{ range hugo.Sites }}
       <a href="{{ .Home.RelPermalink }}"{{ if eq .Language.Lang $curLang }} class="active"{{ end }}>{{ .Language.Label }}</a>

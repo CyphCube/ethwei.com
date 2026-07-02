@@ -1,19 +1,19 @@
 {{ define "main" }}
 <main>
   <section class="hero">
-    <h1 class="hero-title">{{ T "hero_title" }}</h1>
-    <p class="hero-sub">{{ T "hero_sub" }}</p>
-
-    <div class="hero-video">
-      {{/* Drop the hero <video> here when ready, e.g.:
-      <video src="/videos/hero.mp4" autoplay muted loop playsinline poster="/images/hero-poster.jpg"></video> */}}
-      <div class="video-placeholder">
-        <span class="play">&#9654;</span>
-        <span>{{ T "video_soon" }}</span>
-      </div>
+    <div class="hero-bg">
+      {{/* Background hero video — drop the file in static/videos/ and uncomment:
+      <video autoplay muted loop playsinline poster="/images/hero-poster.jpg">
+        <source src="/videos/hero.mp4" type="video/mp4" />
+      </video> */}}
     </div>
+    <div class="hero-overlay"></div>
 
-    <p class="testnet">{{ T "testnet" }}</p>
+    <div class="hero-content">
+      <h1 class="hero-title">{{ T "hero_title" }}</h1>
+      <p class="hero-sub">{{ T "hero_sub" }}</p>
+      <p class="testnet">{{ T "testnet" }}</p>
+    </div>
   </section>
 
   <section class="features">
