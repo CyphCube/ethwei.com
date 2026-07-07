@@ -1,0 +1,93 @@
+<!--
+  Hugo shortcode: live Ethwei testnet stats (block height + supply).
+  Use anywhere in content by calling the ethwei-stats shortcode.
+
+  Pulls directly from the public testnet RPC/API (CORS is open, no proxy
+  needed). Polls every 6s to match explorer.ethwei.com's own refresh rate.
+-->
+<div class="ethwei-stats" id="ethwei-stats-{{ .Ordinal }}">
+  <div class="ethwei-stat">
+    <span class="ethwei-stat-value" data-stat="height">–</span>
+    <span class="ethwei-stat-label">Block Height</span>
+  </div>
+  <div class="ethwei-stat">
+    <span class="ethwei-stat-value" data-stat="supply">–</span>
+    <span class="ethwei-stat-label">Total Supply (ETE)</span>
+  </div>
+  <div class="ethwei-stat">
+    <span class="ethwei-stat-value" data-stat="bonded">–</span>
+    <span class="ethwei-stat-label">Bonded (ETE)</span>
+  </div>
+</div>
+
+<style>
+  .ethwei-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #171d30;
+    border-radius: 0.75rem;
+    border: 1px solid #2a334c;
+  }
+  .ethwei-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 8rem;
+  }
+  .ethwei-stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #3fb68b;
+    font-variant-numeric: tabular-nums;
+  }
+  .ethwei-stat-label {
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: #9aa3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('ethwei-stats-{{ .Ordinal }}');
+  if (!root) return;
+
+  var heightEl = root.querySelector('[data-stat="height"]');
+  var supplyEl = root.querySelector('[data-stat="supply"]');
+  var bondedEl = root.querySelector('[data-stat="bonded"]');
+
+  var DECIMALS = 6; // ETE/WEI exponent
+  function toEte(amount) {
+    return (Number(amount) / Math.pow(10, DECIMALS)).toLocaleString(undefined, { maximumFractionDigits: 0 });
+  }
+
+  async function refresh() {
+    try {
+      var [statusRes, supplyRes, poolRes] = await Promise.all([
+        fetch('https://rpc-testnet.ethwei.com/status').then(function (r) { return r.json(); }),
+        fetch('https://api-testnet.ethwei.com/cosmos/bank/v1beta1/supply/by_denom?denom=WEI').then(function (r) { return r.json(); }),
+        fetch('https://api-testnet.ethwei.com/cosmos/staking/v1beta1/pool').then(function (r) { return r.json(); }),
+      ]);
+
+      var height = Number(statusRes.result.sync_info.latest_block_height);
+      heightEl.textContent = height.toLocaleString();
+
+      if (supplyRes.amount) supplyEl.textContent = toEte(supplyRes.amount.amount);
+      if (poolRes.pool) bondedEl.textContent = toEte(poolRes.pool.bonded_tokens);
+    } catch (e) {
+      // Leave last-known values on screen; testnet RPC/API can be momentarily
+      // unavailable (e.g. redeploys). Uncomment to debug:
+      // console.error('ethwei-stats refresh failed', e);
+    }
+  }
+
+  refresh();
+  setInterval(refresh, 6000);
+})();
+</script>
