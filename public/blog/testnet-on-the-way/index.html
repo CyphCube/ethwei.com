@@ -1,14 +1,406 @@
-<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Testnet Is on the Way — Build on Cosmos SDK — Ethwei - Simple. Secure. Decentralized.</title><meta name=description content="Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet."><link rel=canonical href=https://ethwei.com/blog/testnet-on-the-way/><link rel=alternate hreflang=en href=https://ethwei.com/blog/testnet-on-the-way/><meta property="og:type" content="article"><meta property="og:site_name" content="Ethwei"><meta property="og:url" content="https://ethwei.com/blog/testnet-on-the-way/"><meta property="og:title" content="Testnet Is on the Way — Build on Cosmos SDK — Ethwei - Simple. Secure. Decentralized."><meta property="og:description" content="Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet."><meta property="og:image" content="https://ethwei.com/images/logo.png"><meta property="article:published_time" content="2026-06-10T00:00:00Z"><meta property="article:modified_time" content="2026-06-10T00:00:00Z"><meta property="article:section" content="Engineering"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Testnet Is on the Way — Build on Cosmos SDK — Ethwei - Simple. Secure. Decentralized."><meta name=twitter:description content="Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet."><meta name=twitter:image content="https://ethwei.com/images/logo.png"><link rel=icon type=image/png href=/favicon.png><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Testnet Is on the Way — Build on Cosmos SDK","description":"Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet.","image":"https://ethwei.com/images/logo.png","datePublished":"2026-06-10T00:00:00Z","dateModified":"2026-06-10T00:00:00Z","author":{"@type":"Organization","name":"Ethwei","url":"https://ethwei.com/"},"publisher":{"@type":"Organization","name":"Ethwei","logo":{"@type":"ImageObject","url":"https://ethwei.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ethwei.com/blog/testnet-on-the-way/"}}</script><script>(function(){try{var e=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",e)}catch{document.documentElement.setAttribute("data-theme","dark")}})()</script><style>*{margin:0;padding:0;box-sizing:border-box}:root,[data-theme=dark]{--bg:#000;--text:#ffffff;--muted:rgba(255,255,255,0.62);--faint:rgba(255,255,255,0.45);--border:rgba(255,255,255,0.09);--accent:#5BE06B;--surface:#0d0f14;--thumb-bg:linear-gradient(135deg, rgba(91,224,107,0.18), rgba(91,224,107,0.02));--thumb-border:rgba(91,224,107,0.25);--header-bg:rgba(0,0,0,0.72)}[data-theme=light]{--bg:#ffffff;--text:#0d0f14;--muted:rgba(0,0,0,0.6);--faint:rgba(0,0,0,0.45);--border:rgba(0,0,0,0.10);--accent:#12a150;--surface:#f4f6f8;--thumb-bg:linear-gradient(135deg, rgba(18,161,80,0.14), rgba(18,161,80,0.02));--thumb-border:rgba(18,161,80,0.28);--header-bg:rgba(255,255,255,0.82)}body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,pingfang sc,hiragino sans,apple sd gothic neo,sans-serif;min-height:100vh;display:flex;flex-direction:column;transition:background .25s ease,color .25s ease;line-height:1.6}a{color:inherit;text-decoration:none}header.site{position:sticky;top:0;z-index:50;width:100%;padding:18px 32px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--border);background:var(--header-bg);backdrop-filter:saturate(140%)blur(12px)}.site .logo{width:40px;height:auto;display:block}.site .spacer{margin-left:auto}.site nav.main{display:flex;gap:24px;font-size:.95rem;align-items:center}.site nav.main a{color:var(--muted);transition:color .15s}.site nav.main a:hover,.site nav.main a.active{color:var(--accent)}.lang-dd{position:relative}.lang-btn{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 12px;background:0 0;border:1px solid var(--border);border-radius:9px;color:var(--text);cursor:pointer;font-size:.9rem;font-family:inherit;transition:border-color .15s,color .15s}.lang-btn:hover{border-color:var(--accent);color:var(--accent)}.lang-btn svg{width:16px;height:16px}.lang-btn .chev{width:12px;height:12px;opacity:.7;transition:transform .15s}.lang-btn[aria-expanded=true] .chev{transform:rotate(180deg)}.lang-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:140px;padding:6px;background:var(--bg);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.28);display:none;flex-direction:column;z-index:60}.lang-menu.open{display:flex}.lang-menu a{padding:9px 12px;border-radius:6px;color:var(--muted);font-size:.9rem;transition:color .15s,background .15s}.lang-menu a:hover{color:var(--accent);background:var(--surface)}.lang-menu a.active{color:var(--accent);font-weight:600}.theme-toggle{background:0 0;border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:9px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:border-color .15s,color .15s}.theme-toggle:hover{border-color:var(--accent);color:var(--accent)}.theme-toggle svg{width:18px;height:18px}.icon-moon{display:none}[data-theme=light] .icon-sun{display:none}[data-theme=light] .icon-moon{display:inline}main{flex:1;width:100%}.hero{position:relative;min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}.hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(circle at 50% 38%,#10251a 0%,#060a08 55%,#000 100%)}.hero-bg video{width:100%;height:100%;object-fit:cover;display:block}.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.62) 100%)}.hero-content{position:relative;z-index:2;max-width:860px;padding:48px 24px}.hero-title{font-size:clamp(2rem,5vw,3.7rem);line-height:1.15;font-weight:700;color:#5be06b;margin-bottom:22px}.hero-sub{font-size:clamp(1rem,2vw,1.25rem);color:rgba(255,255,255,.88);max-width:680px;margin:0 auto 34px}.testnet{font-size:clamp(1.1rem,2.4vw,1.5rem);color:#5be06b;font-weight:600}.features{max-width:1040px;margin:0 auto;padding:40px 24px 80px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.feature{border:1px solid var(--border);border-radius:14px;padding:28px 24px;background:var(--thumb-bg)}.feature h3{color:var(--accent);font-size:1.25rem;margin-bottom:10px}.feature p{color:var(--muted);font-size:.98rem}.wrap{max-width:1160px;margin:0 auto;padding:56px 32px 80px}.page-title{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;margin-bottom:8px}.page-sub{color:var(--muted);font-size:1.05rem;margin-bottom:48px}.featured{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;margin-bottom:64px;padding-bottom:56px;border-bottom:1px solid var(--border)}.thumb{aspect-ratio:16/10;border-radius:16px;background:var(--thumb-bg);border:1px solid var(--thumb-border);display:flex;align-items:center;justify-content:center;overflow:hidden}.thumb img{width:42%;height:auto;opacity:.9}.thumb.has-image{background:var(--surface);padding:0}.thumb.has-image img{width:100%;height:100%;object-fit:cover;opacity:1}.featured .thumb{aspect-ratio:16/11}.category{display:inline-block;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}.featured h2{font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.2;margin-bottom:16px}.featured p{color:var(--muted);font-size:1.05rem;margin-bottom:18px}.meta{color:var(--faint);font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 32px}.card .thumb{margin-bottom:18px}.card h3{font-size:1.25rem;line-height:1.3;margin-bottom:10px;transition:color .15s}.card:hover h3{color:var(--accent)}.card p{color:var(--muted);font-size:.95rem;margin-bottom:12px}.post{max-width:720px;margin:0 auto;padding:56px 24px 80px}.back{color:var(--faint);font-size:.9rem;display:inline-block;margin-bottom:32px}.back:hover{color:var(--accent)}.post h1{font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:16px}.post .meta{margin-bottom:40px}.post .hero-img{width:100%;border-radius:12px;margin-bottom:40px}article{line-height:1.85;color:var(--text);font-size:1.1rem}article p{margin-bottom:22px}article h2{color:var(--accent);margin:36px 0 16px}article ul,article ol{margin:0 0 22px 1.3em}article li{margin-bottom:8px}article a{color:var(--accent);text-decoration:underline}article hr{border:none;border-top:1px solid var(--border);margin:36px 0}footer.site{text-align:center;padding:32px 20px;font-size:.95rem;color:var(--faint);border-top:1px solid var(--border)}footer.site a{color:var(--faint);transition:color .15s}footer.site a:hover{color:var(--accent)}@media(max-width:900px){.features{grid-template-columns:1fr}.featured{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){header.site{padding:14px 18px;gap:12px}.site nav.main{gap:14px}.grid{grid-template-columns:1fr}.wrap,.post{padding-left:20px;padding-right:20px}}</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-YNNEMEGLTD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-YNNEMEGLTD")</script></head><body><header class=site><a href=/ aria-label="Ethwei home"><img src=/images/logo.png alt=Ethwei class=logo></a>
-<span class=spacer></span><div class=lang-dd><button class=lang-btn id=langToggle type=button aria-haspopup=true aria-expanded=false>
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3.0 010 20 15.3 15.3.0 010-20z"/></svg>
-<span>English</span>
-<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class=lang-menu id=langMenu><a href=/ class=active>English</a>
-<a href=/zh/>中文</a>
-<a href=/kr/>한국어</a>
-<a href=/ja/>日本語</a></div></div><button class=theme-toggle id=themeToggle type=button aria-label="Toggle dark and light mode">
-<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button></header><main class=post><a href=/blog/ class=back>← Back to Blog</a>
-<span class=category>Engineering</span><h1>Testnet Is on the Way — Build on Cosmos SDK</h1><p class=meta>June 10, 2026</p><article><p>The Ethwei testnet is approaching fast. Built on the battle-tested Cosmos SDK,
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Testnet Is on the Way — Build on Cosmos SDK — Ethwei - Simple. Secure. Decentralized.</title>
+<meta name="description" content="Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet." />
+<link rel="canonical" href="http://localhost:1313/blog/testnet-on-the-way/" />
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/testnet-on-the-way/" />
+
+
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Ethwei" />
+<meta property="og:url" content="http://localhost:1313/blog/testnet-on-the-way/" />
+<meta property="og:title" content="Testnet Is on the Way — Build on Cosmos SDK — Ethwei - Simple. Secure. Decentralized." />
+<meta property="og:description" content="Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet." />
+<meta property="og:image" content="http://localhost:1313/images/logo.png" />
+
+<meta property="article:published_time" content="2026-06-10T00:00:00Z" />
+<meta property="article:modified_time" content="2026-06-10T00:00:00Z" />
+<meta property="article:section" content="Engineering" />
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Testnet Is on the Way — Build on Cosmos SDK — Ethwei - Simple. Secure. Decentralized." />
+<meta name="twitter:description" content="Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet." />
+<meta name="twitter:image" content="http://localhost:1313/images/logo.png" />
+
+<link rel="icon" type="image/png" href="/favicon.png" />
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Testnet Is on the Way — Build on Cosmos SDK",
+  "description": "Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet.",
+  "image": "http://localhost:1313/images/logo.png",
+  "datePublished": "2026-06-10T00:00:00Z",
+  "dateModified": "2026-06-10T00:00:00Z",
+  "author": { "@type": "Organization", "name": "Ethwei", "url": "http://localhost:1313/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ethwei",
+    "logo": { "@type": "ImageObject", "url": "http://localhost:1313/images/logo.png" }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "http://localhost:1313/blog/testnet-on-the-way/" }
+}
+</script>
+
+
+
+<script>
+(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+</script>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root, [data-theme="dark"] {
+    --bg: #000;
+    --text: #ffffff;
+    --muted: rgba(255,255,255,0.62);
+    --faint: rgba(255,255,255,0.45);
+    --border: rgba(255,255,255,0.09);
+    --accent: #5BE06B;
+    --surface: #0d0f14;
+    --thumb-bg: linear-gradient(135deg, rgba(91,224,107,0.18), rgba(91,224,107,0.02));
+    --thumb-border: rgba(91,224,107,0.25);
+    --header-bg: rgba(0,0,0,0.72);
+  }
+  [data-theme="light"] {
+    --bg: #ffffff;
+    --text: #0d0f14;
+    --muted: rgba(0,0,0,0.6);
+    --faint: rgba(0,0,0,0.45);
+    --border: rgba(0,0,0,0.10);
+    --accent: #12a150;
+    --surface: #f4f6f8;
+    --thumb-bg: linear-gradient(135deg, rgba(18,161,80,0.14), rgba(18,161,80,0.02));
+    --thumb-border: rgba(18,161,80,0.28);
+    --header-bg: rgba(255,255,255,0.82);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.25s ease, color 0.25s ease;
+    line-height: 1.6;
+  }
+  a { color: inherit; text-decoration: none; }
+
+   
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--header-bg);
+    backdrop-filter: saturate(140%) blur(12px);
+  }
+  .site .logo { width: 40px; height: auto; display: block; }
+  .site .spacer { margin-left: auto; }
+  .site nav.main { display: flex; gap: 24px; font-size: 0.95rem; align-items: center; }
+  .site nav.main a { color: var(--muted); transition: color 0.15s; }
+  .site nav.main a:hover, .site nav.main a.active { color: var(--accent); }
+
+   
+  .lang-dd { position: relative; }
+  .lang-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    height: 36px; padding: 0 12px;
+    background: transparent; border: 1px solid var(--border);
+    border-radius: 9px; color: var(--text); cursor: pointer;
+    font-size: 0.9rem; font-family: inherit;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .lang-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .lang-btn svg { width: 16px; height: 16px; }
+  .lang-btn .chev { width: 12px; height: 12px; opacity: 0.7; transition: transform 0.15s; }
+  .lang-btn[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  .lang-menu {
+    position: absolute; right: 0; top: calc(100% + 8px);
+    min-width: 140px; padding: 6px;
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 10px; box-shadow: 0 8px 28px rgba(0,0,0,0.28);
+    display: none; flex-direction: column; z-index: 60;
+  }
+  .lang-menu.open { display: flex; }
+  .lang-menu a {
+    padding: 9px 12px; border-radius: 6px;
+    color: var(--muted); font-size: 0.9rem; transition: color 0.15s, background 0.15s;
+  }
+  .lang-menu a:hover { color: var(--accent); background: var(--surface); }
+  .lang-menu a.active { color: var(--accent); font-weight: 600; }
+
+  .theme-toggle {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 36px; height: 36px;
+    border-radius: 9px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+  .theme-toggle svg { width: 18px; height: 18px; }
+  .icon-moon { display: none; }
+  [data-theme="light"] .icon-sun { display: none; }
+  [data-theme="light"] .icon-moon { display: inline; }
+
+   
+  main { flex: 1; width: 100%; }
+  .hero {
+    position: relative;
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+   
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: #000 url('/images/hero.jpg') center center / cover no-repeat;
+  }
+  .hero-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 100%);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+    padding: 48px 24px;
+  }
+   
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3.7rem);
+    line-height: 1.15;
+    font-weight: 700;
+    color: #5BE06B;
+    margin-bottom: 22px;
+  }
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255,255,255,0.88);
+    max-width: 680px;
+    margin: 0 auto 34px;
+  }
+  .testnet {
+    font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+    color: #5BE06B;
+    font-weight: 600;
+  }
+
+   
+  .features {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .feature {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 24px;
+    background: var(--thumb-bg);
+  }
+  .feature h3 { color: var(--accent); font-size: 1.25rem; margin-bottom: 10px; }
+  .feature p { color: var(--muted); font-size: 0.98rem; }
+
+   
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 56px 32px 80px; }
+  .page-title { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 700; margin-bottom: 8px; }
+  .page-sub { color: var(--muted); font-size: 1.05rem; margin-bottom: 48px; }
+  .featured {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center;
+    margin-bottom: 64px; padding-bottom: 56px; border-bottom: 1px solid var(--border);
+  }
+  .thumb {
+    aspect-ratio: 16 / 10; border-radius: 16px; background: var(--thumb-bg);
+    border: 1px solid var(--thumb-border); display: flex; align-items: center;
+    justify-content: center; overflow: hidden;
+  }
+  .thumb img { width: 42%; height: auto; opacity: 0.9; }
+  .thumb.has-image { background: var(--surface); padding: 0; }
+  .thumb.has-image img { width: 100%; height: 100%; object-fit: cover; opacity: 1; }
+  .featured .thumb { aspect-ratio: 16 / 11; }
+  .category {
+    display: inline-block; font-size: 0.78rem; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 14px;
+  }
+  .featured h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.2; margin-bottom: 16px; }
+  .featured p { color: var(--muted); font-size: 1.05rem; margin-bottom: 18px; }
+  .meta { color: var(--faint); font-size: 0.9rem; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px 32px; }
+  .card .thumb { margin-bottom: 18px; }
+  .card h3 { font-size: 1.25rem; line-height: 1.3; margin-bottom: 10px; transition: color 0.15s; }
+  .card:hover h3 { color: var(--accent); }
+  .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 12px; }
+
+   
+  .post { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+  .back { color: var(--faint); font-size: 0.9rem; display: inline-block; margin-bottom: 32px; }
+  .back:hover { color: var(--accent); }
+  .post h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; margin-bottom: 16px; }
+  .post .meta { margin-bottom: 40px; }
+  .post .hero-img { width: 100%; border-radius: 12px; margin-bottom: 40px; }
+  article { line-height: 1.85; color: var(--text); font-size: 1.1rem; }
+  article p { margin-bottom: 22px; }
+  article h2 { color: var(--accent); margin: 36px 0 16px; }
+  article ul, article ol { margin: 0 0 22px 1.3em; }
+  article li { margin-bottom: 8px; }
+  article a { color: var(--accent); text-decoration: underline; }
+  article hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+
+   
+  footer.site {
+    text-align: center; padding: 32px 20px; font-size: 0.95rem;
+    color: var(--faint); border-top: 1px solid var(--border);
+  }
+  footer.site a { color: var(--faint); transition: color 0.15s; }
+  footer.site a:hover { color: var(--accent); }
+
+  @media (max-width: 900px) {
+    .features { grid-template-columns: 1fr; }
+    .featured { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    header.site { padding: 14px 18px; gap: 12px; }
+    .site nav.main { gap: 14px; }
+    .grid { grid-template-columns: 1fr; }
+    .wrap, .post { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNNEMEGLTD"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YNNEMEGLTD');
+  </script>
+</head>
+<body>
+  
+
+<header class="site">
+  <a href="/" aria-label="Ethwei home"><img src="/images/logo.png" alt="Ethwei" class="logo" /></a>
+
+  
+
+  <span class="spacer"></span>
+
+  <div class="lang-dd">
+    <button class="lang-btn" id="langToggle" type="button" aria-haspopup="true" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
+      <span>English</span>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="lang-menu" id="langMenu">
+      
+        <a href="/" class="active">English</a>
+      
+        <a href="/zh/">中文</a>
+      
+        <a href="/kr/">한국어</a>
+      
+        <a href="/ja/">日本語</a>
+      
+    </div>
+  </div>
+
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</header>
+
+
+  
+<main class="post">
+  <a href="/blog/" class="back">← Back to Blog</a>
+  <span class="category">Engineering</span>
+  <h1>Testnet Is on the Way — Build on Cosmos SDK</h1>
+  <p class="meta">June 10, 2026</p>
+  
+  <article><p>The Ethwei testnet is approaching fast. Built on the battle-tested Cosmos SDK,
 it gives developers a familiar, modular foundation for building applications
-around real world assets.</p><p>We will share validator onboarding details, faucet access, and SDK
-documentation in the coming weeks.</p></article></main><footer class=site>© 2026 Ethwei &nbsp;&#183;&nbsp; <a href=/blog/>Blog</a></footer><script>(function(){var e,t,n=document.getElementById("themeToggle");n&&n.addEventListener("click",function(){var e=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";document.documentElement.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}}),e=document.getElementById("langToggle"),t=document.getElementById("langMenu"),e&&t&&(e.addEventListener("click",function(n){n.stopPropagation();var s=t.classList.toggle("open");e.setAttribute("aria-expanded",s?"true":"false")}),document.addEventListener("click",function(){t.classList.remove("open"),e.setAttribute("aria-expanded","false")}))})()</script></body></html>
+around real world assets.</p>
+<p>We will share validator onboarding details, faucet access, and SDK
+documentation in the coming weeks.</p>
+</article>
+</main>
+
+
+  <footer class="site">
+  © 2026 Ethwei &nbsp;&middot;&nbsp; <a href="/blog/">Blog</a>
+</footer>
+
+
+  <script>
+  (function(){
+    var btn = document.getElementById('themeToggle');
+    if (btn) btn.addEventListener('click', function(){
+      var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch(e) {}
+    });
+
+    var langBtn = document.getElementById('langToggle');
+    var langMenu = document.getElementById('langMenu');
+    if (langBtn && langMenu) {
+      langBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var open = langMenu.classList.toggle('open');
+        langBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(){
+        langMenu.classList.remove('open');
+        langBtn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
