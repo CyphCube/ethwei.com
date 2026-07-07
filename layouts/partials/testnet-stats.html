@@ -1,28 +1,26 @@
-<!--
-  Hugo shortcode: live Ethwei testnet stats (block height + supply).
-  Use anywhere in content by calling the ethwei-stats shortcode.
+<section class="testnet-stats-section">
+  <h2 class="testnet-stats-title"><span class="live-dot"></span>{{ T "testnet_live_title" }}</h2>
+  <p class="testnet-stats-sub">{{ T "testnet_live_sub" }}</p>
 
-  Pulls directly from the public testnet RPC/API (CORS is open, no proxy
-  needed). Polls every 6s to match explorer.ethwei.com's own refresh rate.
--->
-<div class="ethwei-stats" id="ethwei-stats-{{ .Ordinal }}">
-  <div class="ethwei-stat">
-    <span class="ethwei-stat-value" data-stat="height">–</span>
-    <span class="ethwei-stat-label">{{ i18n "stat_block_height" }}</span>
+  <div class="ethwei-stats" id="ethwei-stats-home">
+    <div class="ethwei-stat">
+      <span class="ethwei-stat-value" data-stat="height">–</span>
+      <span class="ethwei-stat-label">{{ T "stat_block_height" }}</span>
+    </div>
+    <div class="ethwei-stat">
+      <span class="ethwei-stat-value" data-stat="supply">–</span>
+      <span class="ethwei-stat-label">{{ T "stat_total_supply" }}</span>
+    </div>
+    <div class="ethwei-stat">
+      <span class="ethwei-stat-value" data-stat="bonded">–</span>
+      <span class="ethwei-stat-label">{{ T "stat_bonded" }}</span>
+    </div>
   </div>
-  <div class="ethwei-stat">
-    <span class="ethwei-stat-value" data-stat="supply">–</span>
-    <span class="ethwei-stat-label">{{ i18n "stat_total_supply" }}</span>
-  </div>
-  <div class="ethwei-stat">
-    <span class="ethwei-stat-value" data-stat="bonded">–</span>
-    <span class="ethwei-stat-label">{{ i18n "stat_bonded" }}</span>
-  </div>
-</div>
+</section>
 
 <script>
 (function () {
-  var root = document.getElementById('ethwei-stats-{{ .Ordinal }}');
+  var root = document.getElementById('ethwei-stats-home');
   if (!root) return;
 
   var heightEl = root.querySelector('[data-stat="height"]');
@@ -48,9 +46,7 @@
       if (supplyRes.amount) supplyEl.textContent = toEte(supplyRes.amount.amount);
       if (poolRes.pool) bondedEl.textContent = toEte(poolRes.pool.bonded_tokens);
     } catch (e) {
-      // Leave last-known values on screen; testnet RPC/API can be momentarily
-      // unavailable (e.g. redeploys). Uncomment to debug:
-      // console.error('ethwei-stats refresh failed', e);
+      // Leave last-known values on screen; testnet RPC/API can be momentarily unavailable.
     }
   }
 
