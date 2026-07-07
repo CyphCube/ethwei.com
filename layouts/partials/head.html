@@ -215,7 +215,10 @@
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.62) 100%);
+    /* Radial vignette focuses contrast behind the centered text */
+    background:
+      radial-gradient(ellipse 60% 55% at 50% 48%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.30) 100%),
+      linear-gradient(180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.55) 100%);
   }
   .hero-content {
     position: relative;
@@ -228,19 +231,22 @@
     font-size: clamp(2rem, 5vw, 3.7rem);
     line-height: 1.15;
     font-weight: 700;
-    color: #5BE06B;
+    color: #6EE87C;
     margin-bottom: 22px;
+    text-shadow: 0 2px 18px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6);
   }
   .hero-sub {
     font-size: clamp(1rem, 2vw, 1.25rem);
-    color: rgba(255,255,255,0.88);
+    color: rgba(255,255,255,0.92);
     max-width: 680px;
     margin: 0 auto 34px;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.7);
   }
   .testnet {
     font-size: clamp(1.1rem, 2.4vw, 1.5rem);
-    color: #5BE06B;
+    color: #6EE87C;
     font-weight: 600;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.6);
   }
 
   /* Features */
