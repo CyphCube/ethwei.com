@@ -358,6 +358,15 @@
   }
   footer.site a { color: var(--faint); transition: color 0.15s; }
   footer.site a:hover { color: var(--accent); }
+  .social {
+    display: flex; flex-wrap: wrap; gap: 18px;
+    justify-content: center; align-items: center; margin-bottom: 18px;
+  }
+  .social a {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem;
+  }
+  .social svg { width: 19px; height: 19px; }
+  .footer-meta a { text-decoration: none; }
 
   @media (max-width: 900px) {
     .features { grid-template-columns: 1fr; }
