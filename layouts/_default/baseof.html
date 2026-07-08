@@ -41,6 +41,21 @@
         langBtn.setAttribute('aria-expanded', 'false');
       });
     }
+
+    var hamburger = document.getElementById('hamburgerToggle');
+    var mobileMenu = document.getElementById('mobileMenu');
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', function(e){
+        e.stopPropagation();
+        var open = mobileMenu.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      mobileMenu.addEventListener('click', function(e){ e.stopPropagation(); });
+      document.addEventListener('click', function(){
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    }
   })();
   </script>
 </body>
