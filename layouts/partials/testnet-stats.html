@@ -32,12 +32,21 @@
     return (Number(amount) / Math.pow(10, DECIMALS)).toLocaleString(undefined, { maximumFractionDigits: 0 });
   }
 
+  var inFlight = false;
+  function fetchWithTimeout(url, ms) {
+    var controller = new AbortController();
+    var timer = setTimeout(function () { controller.abort(); }, ms);
+    return fetch(url, { signal: controller.signal }).finally(function () { clearTimeout(timer); });
+  }
+
   async function refresh() {
+    if (inFlight) return;
+    inFlight = true;
     try {
       var [statusRes, supplyRes, poolRes] = await Promise.all([
-        fetch('https://rpc-testnet.ethwei.com/status').then(function (r) { return r.json(); }),
-        fetch('https://api-testnet.ethwei.com/cosmos/bank/v1beta1/supply/by_denom?denom=WEI').then(function (r) { return r.json(); }),
-        fetch('https://api-testnet.ethwei.com/cosmos/staking/v1beta1/pool').then(function (r) { return r.json(); }),
+        fetchWithTimeout('https://rpc-testnet.ethwei.com/status', 5000).then(function (r) { return r.json(); }),
+        fetchWithTimeout('https://api-testnet.ethwei.com/cosmos/bank/v1beta1/supply/by_denom?denom=WEI', 5000).then(function (r) { return r.json(); }),
+        fetchWithTimeout('https://api-testnet.ethwei.com/cosmos/staking/v1beta1/pool', 5000).then(function (r) { return r.json(); }),
       ]);
 
       var height = Number(statusRes.result.sync_info.latest_block_height);
@@ -47,10 +56,17 @@
       if (poolRes.pool) bondedEl.textContent = toEte(poolRes.pool.bonded_tokens);
     } catch (e) {
       // Leave last-known values on screen; testnet RPC/API can be momentarily unavailable.
+    } finally {
+      inFlight = false;
     }
   }
 
   refresh();
-  setInterval(refresh, 6000);
+  var pollId = setInterval(function () {
+    if (!document.hidden) refresh();
+  }, 10000);
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) refresh();
+  });
 })();
 </script>
