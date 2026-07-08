@@ -3,7 +3,7 @@
   Use anywhere in content by calling the ethwei-stats shortcode.
 
   Pulls directly from the public testnet RPC/API (CORS is open, no proxy
-  needed). Polls every 6s to match explorer.ethwei.com's own refresh rate.
+  needed). Polls every 10s to match explorer.ethwei.com's own refresh rate.
 -->
 <div class="ethwei-stats" id="ethwei-stats-{{ .Ordinal }}">
   <div class="ethwei-stat">
@@ -18,6 +18,14 @@
     <span class="ethwei-stat-value" data-stat="bonded">–</span>
     <span class="ethwei-stat-label">{{ i18n "stat_bonded" }}</span>
   </div>
+  <div class="ethwei-stat">
+    <span class="ethwei-stat-value" data-stat="max-supply">–</span>
+    <span class="ethwei-stat-label">{{ i18n "stat_max_supply" }}</span>
+  </div>
+  <div class="ethwei-stat">
+    <span class="ethwei-stat-value" data-stat="remaining-supply">–</span>
+    <span class="ethwei-stat-label">{{ i18n "stat_remaining_supply" }}</span>
+  </div>
 </div>
 
 <script>
@@ -28,11 +36,19 @@
   var heightEl = root.querySelector('[data-stat="height"]');
   var supplyEl = root.querySelector('[data-stat="supply"]');
   var bondedEl = root.querySelector('[data-stat="bonded"]');
+  var maxSupplyEl = root.querySelector('[data-stat="max-supply"]');
+  var remainingSupplyEl = root.querySelector('[data-stat="remaining-supply"]');
 
   var DECIMALS = 6; // ETE/WEI exponent
+  var MAX_SUPPLY_ETE = 10000000000; // fixed cap, 10B ETE
   function toEte(amount) {
     return (Number(amount) / Math.pow(10, DECIMALS)).toLocaleString(undefined, { maximumFractionDigits: 0 });
   }
+  function fmt(n) {
+    return n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+  }
+
+  maxSupplyEl.textContent = fmt(MAX_SUPPLY_ETE);
 
   var inFlight = false;
   function fetchWithTimeout(url, ms) {
@@ -54,7 +70,11 @@
       var height = Number(statusRes.result.sync_info.latest_block_height);
       heightEl.textContent = height.toLocaleString();
 
-      if (supplyRes.amount) supplyEl.textContent = toEte(supplyRes.amount.amount);
+      if (supplyRes.amount) {
+        var totalEte = Number(supplyRes.amount.amount) / Math.pow(10, DECIMALS);
+        supplyEl.textContent = fmt(totalEte);
+        remainingSupplyEl.textContent = fmt(Math.max(MAX_SUPPLY_ETE - totalEte, 0));
+      }
       if (poolRes.pool) bondedEl.textContent = toEte(poolRes.pool.bonded_tokens);
     } catch (e) {
       // Leave last-known values on screen; testnet RPC/API can be momentarily
