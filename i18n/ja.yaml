@@ -18,3 +18,7 @@ testnet_live_sub: "イーサウェイ テストネットのリアルタイムデ
 stat_block_height: "ブロック高"
 stat_total_supply: "総供給量 (ETE)"
 stat_bonded: "ステーキング (ETE)"
+social_x: "X"
+social_channel: "チャンネル"
+social_en: "英語"
+social_zh: "中国語"
