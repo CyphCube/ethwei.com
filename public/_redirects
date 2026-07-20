@@ -1,3 +1,6 @@
 /en/sitemap.xml  /en/sitemap.xml  200
 /en/*            /:splat          301
 /en              /                301
+
+/kr/*            /ko/:splat       301
+/kr              /ko/             301
