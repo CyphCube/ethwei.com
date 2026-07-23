@@ -39,3 +39,11 @@ enableRobotsTXT = true
     title = "イーサウェイ Ethwei - シンプル · セキュア · 分散型"
     [languages.ja.params]
       description = "イーサウェイ（Ethwei）は現実資産のトークン化のために設計されたレイヤー1ブロックチェーンです。不動産、コモディティ、クレジット、エクイティをエンタープライズグレードのセキュリティでオンチェーンに。"
+
+  [languages.vi]
+    label = "Tiếng Việt"
+    locale = "vi"
+    weight = 5
+    title = "Ethwei - Đơn giản. An toàn. Phi tập trung."
+    [languages.vi.params]
+      description = "Ethwei là blockchain Layer 1 được thiết kế riêng cho việc token hóa tài sản thực (RWA). Đưa bất động sản, hàng hóa, tín dụng và cổ phần lên chuỗi với bảo mật cấp doanh nghiệp."
