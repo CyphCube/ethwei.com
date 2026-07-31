@@ -331,7 +331,7 @@
   .features {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 40px 24px 80px;
+    padding: 40px 24px 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -344,6 +344,38 @@
   }
   .feature h3 { color: var(--accent); font-size: 1.25rem; margin-bottom: 10px; }
   .feature p { color: var(--muted); font-size: 0.98rem; }
+
+  /* Apps */
+  .apps-section {
+    max-width: 1040px; margin: 0 auto; padding: 8px 24px 56px; text-align: center;
+  }
+  .apps-title { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .apps-sub { color: var(--muted); font-size: 1rem; margin-bottom: 32px; }
+  .app-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px; text-align: left;
+  }
+  .app-card {
+    display: flex; flex-direction: column;
+    border: 1px solid var(--border); border-radius: 14px;
+    padding: 24px; background: var(--thumb-bg);
+  }
+  .app-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .app-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: var(--surface); border: 1px solid var(--thumb-border);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;
+  }
+  .app-card-header h3 { font-size: 1.15rem; color: var(--text); }
+  .app-card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 20px; flex: 1; }
+  .app-open-link {
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    border: 1px solid var(--accent); color: var(--accent);
+    border-radius: 9px; padding: 9px 16px; font-size: 0.9rem; font-weight: 600;
+    transition: background 0.15s, color 0.15s;
+  }
+  .app-open-link:hover { background: var(--accent); color: var(--bg); }
 
   /* Blog list */
   .wrap { max-width: 1160px; margin: 0 auto; padding: 56px 32px 80px; }
