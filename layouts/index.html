@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $curLang := .Site.Language.Lang }}
+{{ $sacklinkURL := cond (eq $curLang "en") "https://sacklink.com/" (printf "https://sacklink.com/%s/" $curLang) }}
 <main>
   <section class="hero">
     <div class="hero-bg">
@@ -44,7 +46,7 @@
           <h3>{{ T "app_sacklink_name" }}</h3>
         </div>
         <p>{{ T "app_sacklink_desc" }}</p>
-        <a href="https://sacklink.com/" target="_blank" rel="noopener noreferrer" class="app-open-link">{{ T "app_open" }} →</a>
+        <a href="{{ $sacklinkURL }}" target="_blank" rel="noopener noreferrer" class="app-open-link">{{ T "app_open" }} →</a>
       </div>
     </div>
   </section>
