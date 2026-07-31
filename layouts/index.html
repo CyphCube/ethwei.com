@@ -31,6 +31,8 @@
     </div>
   </section>
 
+  {{ partial "testnet-stats.html" . }}
+
   <section class="apps-section" id="apps">
     <h2 class="apps-title">{{ T "apps_title" }}</h2>
     <p class="apps-sub">{{ T "apps_sub" }}</p>
@@ -46,7 +48,5 @@
       </div>
     </div>
   </section>
-
-  {{ partial "testnet-stats.html" . }}
 </main>
 {{ end }}

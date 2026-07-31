@@ -177,7 +177,7 @@
   [data-theme="light"] .icon-moon { display: inline; }
 
    
-  .main-nav { display: flex; gap: 22px; align-items: center; }
+  .main-nav { display: flex; gap: 22px; align-items: center; margin-left: 28px; }
   .main-nav a { color: var(--muted); font-size: 0.95rem; transition: color 0.15s; }
   .main-nav a:hover { color: var(--accent); }
 
@@ -279,7 +279,7 @@
 
    
   .testnet-stats-section {
-    max-width: 1040px; margin: 0 auto; padding: 24px 24px 80px; text-align: center;
+    max-width: 1040px; margin: 0 auto; padding: 24px 24px 24px; text-align: center;
   }
   .testnet-stats-title {
     font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(--text);
@@ -336,7 +336,7 @@
 
    
   .apps-section {
-    max-width: 1040px; margin: 0 auto; padding: 8px 24px 56px; text-align: center;
+    max-width: 1040px; margin: 0 auto; padding: 24px 24px 80px; text-align: center;
   }
   .apps-title { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(--text); margin-bottom: 8px; }
   .apps-sub { color: var(--muted); font-size: 1rem; margin-bottom: 32px; }
@@ -563,22 +563,6 @@
     </div>
   </section>
 
-  <section class="apps-section" id="apps">
-    <h2 class="apps-title">Apps</h2>
-    <p class="apps-sub">Tools and apps built for the Ethwei ecosystem.</p>
-
-    <div class="app-grid">
-      <div class="app-card">
-        <div class="app-card-header">
-          <span class="app-icon">S</span>
-          <h3>Sacklink</h3>
-        </div>
-        <p>Install and manage crypto wallets safely — a trusted starting point before you connect to Ethwei.</p>
-        <a href="https://sacklink.com/" target="_blank" rel="noopener noreferrer" class="app-open-link">Open App →</a>
-      </div>
-    </div>
-  </section>
-
   <section class="testnet-stats-section">
   <h2 class="testnet-stats-title"><span class="live-dot"></span>Live Testnet</h2>
   <p class="testnet-stats-sub">Real-time stats from the Ethwei testnet.</p>
@@ -672,6 +656,22 @@
 })();
 </script>
 
+
+  <section class="apps-section" id="apps">
+    <h2 class="apps-title">Apps</h2>
+    <p class="apps-sub">Tools and apps built for the Ethwei ecosystem.</p>
+
+    <div class="app-grid">
+      <div class="app-card">
+        <div class="app-card-header">
+          <span class="app-icon">S</span>
+          <h3>Sacklink</h3>
+        </div>
+        <p>Install and manage crypto wallets safely — a trusted starting point before you connect to Ethwei.</p>
+        <a href="https://sacklink.com/" target="_blank" rel="noopener noreferrer" class="app-open-link">Open App →</a>
+      </div>
+    </div>
+  </section>
 </main>
 
 
