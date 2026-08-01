@@ -136,7 +136,7 @@
       });
 
       lastBurnedEte = totalBurnedUwei / Math.pow(10, DECIMALS);
-      burnedEl.textContent = '🔥 ' + fmt(lastBurnedEte);
+      burnedEl.textContent = fmt(lastBurnedEte);
       updateRemaining();
     } catch (e) {
       // Leave last-known value on screen.
