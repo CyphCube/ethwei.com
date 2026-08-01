@@ -59,6 +59,16 @@
     return fetch(url, { signal: controller.signal }).finally(function () { clearTimeout(timer); });
   }
 
+  // Remaining Supply = Max Supply - Total Supply - Burned. Burns already
+  // reduce Total Supply directly (no burn address), so the cap on lifetime
+  // mintable supply requires adding burns back before subtracting from Max.
+  var lastTotalEte = null;
+  var lastBurnedEte = null;
+  function updateRemaining() {
+    if (lastTotalEte === null || lastBurnedEte === null) return;
+    remainingSupplyEl.textContent = fmt(Math.max(MAX_SUPPLY_ETE - lastTotalEte - lastBurnedEte, 0));
+  }
+
   var inFlight = false;
   async function refresh() {
     if (inFlight) return;
@@ -74,9 +84,9 @@
       heightEl.textContent = height.toLocaleString();
 
       if (supplyRes.amount) {
-        var totalEte = Number(supplyRes.amount.amount) / Math.pow(10, DECIMALS);
-        supplyEl.textContent = fmt(totalEte);
-        remainingSupplyEl.textContent = fmt(Math.max(MAX_SUPPLY_ETE - totalEte, 0));
+        lastTotalEte = Number(supplyRes.amount.amount) / Math.pow(10, DECIMALS);
+        supplyEl.textContent = fmt(lastTotalEte);
+        updateRemaining();
       }
       if (poolRes.pool) bondedEl.textContent = toEte(poolRes.pool.bonded_tokens);
     } catch (e) {
@@ -121,7 +131,9 @@
         });
       });
 
-      burnedEl.textContent = fmt(totalBurnedUwei / Math.pow(10, DECIMALS));
+      lastBurnedEte = totalBurnedUwei / Math.pow(10, DECIMALS);
+      burnedEl.textContent = '🔥 ' + fmt(lastBurnedEte);
+      updateRemaining();
     } catch (e) {
       // Leave last-known value on screen.
     } finally {
