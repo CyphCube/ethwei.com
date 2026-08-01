@@ -33,4 +33,4 @@ apps_sub: "Công cụ và ứng dụng được xây dựng cho hệ sinh thái 
 app_sacklink_name: "Sacklink"
 app_sacklink_desc: "Cài đặt và quản lý ví tiền điện tử một cách an toàn — bước khởi đầu đáng tin cậy trước khi kết nối với Ethwei."
 app_open: "Mở Ứng Dụng"
-testnet_burn_note: "ETE bị slashing sẽ bị đốt vĩnh viễn — nguồn cung mang tính giảm phát. Tổng cung hiện tại thấp hơn mức cung genesis 7 tỷ, nghĩa là lượng đốt đã vượt qua lượng phát hành mới."
+stat_burned: "Đã Đốt (ETE)"

@@ -23,9 +23,11 @@
       <span class="ethwei-stat-value" data-stat="bonded">–</span>
       <span class="ethwei-stat-label">{{ T "stat_bonded" }}</span>
     </div>
+    <div class="ethwei-stat">
+      <span class="ethwei-stat-value" data-stat="burned">–</span>
+      <span class="ethwei-stat-label">{{ T "stat_burned" }}</span>
+    </div>
   </div>
-
-  <p class="testnet-burn-note">{{ T "testnet_burn_note" }}</p>
 </section>
 
 <script>
@@ -38,6 +40,7 @@
   var bondedEl = root.querySelector('[data-stat="bonded"]');
   var maxSupplyEl = root.querySelector('[data-stat="max-supply"]');
   var remainingSupplyEl = root.querySelector('[data-stat="remaining-supply"]');
+  var burnedEl = root.querySelector('[data-stat="burned"]');
 
   var DECIMALS = 6; // ETE/WEI exponent
   var MAX_SUPPLY_ETE = 10000000000; // fixed cap, 10B ETE
@@ -50,13 +53,13 @@
 
   maxSupplyEl.textContent = fmt(MAX_SUPPLY_ETE);
 
-  var inFlight = false;
   function fetchWithTimeout(url, ms) {
     var controller = new AbortController();
     var timer = setTimeout(function () { controller.abort(); }, ms);
     return fetch(url, { signal: controller.signal }).finally(function () { clearTimeout(timer); });
   }
 
+  var inFlight = false;
   async function refresh() {
     if (inFlight) return;
     inFlight = true;
@@ -83,12 +86,59 @@
     }
   }
 
+  // Burned total: summed from on-chain "slash" events (finalize_block_events),
+  // via CometBFT's block_search + block_results RPCs. There is no burn address
+  // and no aggregate "total burned" endpoint, so this is computed by finding
+  // every block with a slash event and summing each event's burned_coins.
+  // Refreshed on its own slower interval since it costs one request per event.
+  var burnedInFlight = false;
+  async function refreshBurned() {
+    if (burnedInFlight) return;
+    burnedInFlight = true;
+    try {
+      var query = encodeURIComponent('"slash.reason EXISTS"');
+      var searchRes = await fetchWithTimeout(
+        'https://rpc-testnet.ethwei.com/block_search?query=' + query + '&per_page=100',
+        8000
+      ).then(function (r) { return r.json(); });
+
+      var blocks = (searchRes.result && searchRes.result.blocks) || [];
+      var heights = blocks.map(function (b) { return b.block.header.height; });
+
+      var results = await Promise.all(heights.map(function (h) {
+        return fetchWithTimeout('https://rpc-testnet.ethwei.com/block_results?height=' + h, 8000)
+          .then(function (r) { return r.json(); })
+          .catch(function () { return null; });
+      }));
+
+      var totalBurnedUwei = 0;
+      results.forEach(function (res) {
+        if (!res || !res.result || !res.result.finalize_block_events) return;
+        res.result.finalize_block_events.forEach(function (ev) {
+          if (ev.type !== 'slash') return;
+          var attr = ev.attributes.find(function (a) { return a.key === 'burned_coins'; });
+          if (attr) totalBurnedUwei += Number(attr.value);
+        });
+      });
+
+      burnedEl.textContent = fmt(totalBurnedUwei / Math.pow(10, DECIMALS));
+    } catch (e) {
+      // Leave last-known value on screen.
+    } finally {
+      burnedInFlight = false;
+    }
+  }
+
   refresh();
+  refreshBurned();
   var pollId = setInterval(function () {
     if (!document.hidden) refresh();
   }, 10000);
+  var burnedPollId = setInterval(function () {
+    if (!document.hidden) refreshBurned();
+  }, 60000);
   document.addEventListener('visibilitychange', function () {
-    if (!document.hidden) refresh();
+    if (!document.hidden) { refresh(); refreshBurned(); }
   });
 })();
 </script>
