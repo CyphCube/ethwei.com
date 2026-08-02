@@ -1,3 +1,5 @@
+{{ $curLang := .Site.Language.Lang }}
+{{ $blogURL := cond (eq $curLang "en") "/blog/" (printf "/%s/blog/" $curLang) }}
 <footer class="site">
   <div class="footer-row">
     <div class="footer-copyright">{{ T "footer_rights" }}</div>
@@ -35,7 +37,7 @@
 
       <span class="footer-sep">|</span>
 
-      <a href="/blog/" class="footer-blog-link">{{ T "nav_blog" }}</a>
+      <a href="{{ $blogURL }}" class="footer-blog-link">{{ T "nav_blog" }}</a>
     </div>
   </div>
 </footer>
