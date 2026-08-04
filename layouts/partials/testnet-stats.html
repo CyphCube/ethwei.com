@@ -1,30 +1,30 @@
 <section class="testnet-stats-section">
-  <h2 class="testnet-stats-title"><span class="live-dot"></span>{{ T "testnet_live_title" }}</h2>
+  <h2 class="testnet-stats-title">{{ T "testnet_live_title" }}</h2>
   <p class="testnet-stats-sub">{{ T "testnet_live_sub" }}</p>
 
   <div class="ethwei-stats" id="ethwei-stats-home">
     <div class="ethwei-stat">
-      <span class="ethwei-stat-value" data-stat="height">–</span>
+      <span class="ethwei-stat-value" data-stat="height">621,526</span>
       <span class="ethwei-stat-label">{{ T "stat_block_height" }}</span>
     </div>
     <div class="ethwei-stat">
-      <span class="ethwei-stat-value" data-stat="supply">–</span>
+      <span class="ethwei-stat-value" data-stat="supply">6,999,827,484</span>
       <span class="ethwei-stat-label">{{ T "stat_total_supply" }}</span>
     </div>
     <div class="ethwei-stat">
-      <span class="ethwei-stat-value" data-stat="remaining-supply">–</span>
+      <span class="ethwei-stat-value" data-stat="remaining-supply">2,990,152,516</span>
       <span class="ethwei-stat-label">{{ T "stat_remaining_supply" }}</span>
     </div>
     <div class="ethwei-stat">
-      <span class="ethwei-stat-value" data-stat="max-supply">–</span>
+      <span class="ethwei-stat-value" data-stat="max-supply">10,000,000,000</span>
       <span class="ethwei-stat-label">{{ T "stat_max_supply" }}</span>
     </div>
     <div class="ethwei-stat">
-      <span class="ethwei-stat-value" data-stat="bonded">–</span>
+      <span class="ethwei-stat-value" data-stat="bonded">6,991,980,000</span>
       <span class="ethwei-stat-label">{{ T "stat_bonded" }}</span>
     </div>
     <div class="ethwei-stat">
-      <span class="ethwei-stat-value" data-stat="burned">–</span>
+      <span class="ethwei-stat-value" data-stat="burned">10,020,000</span>
       <span class="ethwei-stat-label">{{ T "stat_burned" }}</span>
     </div>
   </div>
@@ -62,8 +62,8 @@
   // Remaining Supply = Max Supply - Total Supply - Burned. Burns already
   // reduce Total Supply directly (no burn address), so the cap on lifetime
   // mintable supply requires adding burns back before subtracting from Max.
-  var lastTotalEte = null;
-  var lastBurnedEte = null;
+  var lastTotalEte = 6999827484;
+  var lastBurnedEte = 10020000;
   function updateRemaining() {
     if (lastTotalEte === null || lastBurnedEte === null) return;
     remainingSupplyEl.textContent = fmt(Math.max(MAX_SUPPLY_ETE - lastTotalEte - lastBurnedEte, 0));
