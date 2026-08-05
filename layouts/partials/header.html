@@ -20,7 +20,16 @@
     </button>
     <div class="lang-menu" id="langMenu">
       {{ range hugo.Sites }}
-        <a href="{{ .Home.RelPermalink }}"{{ if eq .Language.Lang $curLang }} class="active"{{ end }}>{{ .Language.Label }}</a>
+        {{ $site := . }}
+        {{ $url := .Home.RelPermalink }}
+        {{ if eq $site.Language.Lang $curLang }}
+          {{ $url = $.RelPermalink }}
+        {{ else }}
+          {{ range $.Translations }}
+            {{ if eq .Language.Lang $site.Language.Lang }}{{ $url = .RelPermalink }}{{ end }}
+          {{ end }}
+        {{ end }}
+        <a href="{{ $url }}"{{ if eq .Language.Lang $curLang }} class="active"{{ end }}>{{ .Language.Label }}</a>
       {{ end }}
     </div>
   </div>
@@ -41,7 +50,16 @@
     <div class="mobile-menu-sep"></div>
     <div class="mobile-lang-list">
       {{ range hugo.Sites }}
-        <a href="{{ .Home.RelPermalink }}"{{ if eq .Language.Lang $curLang }} class="active"{{ end }}>{{ .Language.Label }}</a>
+        {{ $site := . }}
+        {{ $url := .Home.RelPermalink }}
+        {{ if eq $site.Language.Lang $curLang }}
+          {{ $url = $.RelPermalink }}
+        {{ else }}
+          {{ range $.Translations }}
+            {{ if eq .Language.Lang $site.Language.Lang }}{{ $url = .RelPermalink }}{{ end }}
+          {{ end }}
+        {{ end }}
+        <a href="{{ $url }}"{{ if eq .Language.Lang $curLang }} class="active"{{ end }}>{{ .Language.Label }}</a>
       {{ end }}
     </div>
   </div>
