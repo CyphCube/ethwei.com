@@ -2,6 +2,7 @@
 title: "Tổng kết Testnet Giai đoạn 1: Những lỗi chúng tôi tìm ra trước khi mainnet làm điều đó"
 date: 2026-08-04
 category: "Kỹ Thuật"
+image: "/blog/testnet-phase-1-retrospective.jpg"
 summary: "Testnet đầu tiên của Ethwei chạy suốt năm tuần mà không có sự cố ngừng hoạt động ngoài kế hoạch nào. Đó không phải là điều đáng nói. Điều đáng nói là bốn vấn đề mà nó phơi bày — một lỗ hổng vượt qua quản trị, một khoảng hở trong giới hạn cung, và một sự cố slashing — và vì sao chúng tôi chọn loại bỏ mã nguồn thay vì thêm nhiều mã hơn để sửa chúng."
 ---
 

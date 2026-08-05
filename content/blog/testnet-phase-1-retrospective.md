@@ -2,6 +2,7 @@
 title: "Testnet Phase 1 Retrospective: The Bugs We Found Before Mainnet Did"
 date: 2026-08-04
 category: "Engineering"
+image: "/blog/testnet-phase-1-retrospective.jpg"
 summary: "Ethwei's first testnet ran for five weeks without an unplanned halt. That's not the interesting part. The interesting part is the four problems it surfaced — a governance bypass, a supply-cap gap, and a slashing accident — and why we removed code instead of adding more to fix them."
 ---
 
