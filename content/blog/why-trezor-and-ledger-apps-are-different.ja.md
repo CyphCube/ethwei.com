@@ -3,7 +3,7 @@ title: "TrezorとLedgerアプリが従来の暗号資産ウォレットアプリ
 date: 2026-06-14
 category: "セキュリティ"
 summary: "TrezorやLedgerのようなハードウェアウォレットは、ソフトウェアウォレットとは根本的に異なる仕組みで動作します。秘密鍵がデバイスから絶対に出ない理由と、それがセキュリティにとって何を意味するかを解説します。"
-description: "TrezorやLedgerのようなハードウェアウォレットは、ソフトウェアウォレットとは根本的に異なる仕組みで動作します。秘密鍵がデバイスから絶対に出ない理由と、それがセキュリティにとって何を意味するかを解説します。"
+description: "TrezorやLedgerのようなハードウェアウォレットはソフトウェアウォレットと根本的に異なります——秘密鍵はデバイスから離れません。"
 image: "/blog/hardware-vs-hot-wallet.svg"
 ogImage: "/blog/hardware-vs-hot-wallet-og.png"
 featured: true

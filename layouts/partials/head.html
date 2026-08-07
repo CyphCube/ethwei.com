@@ -2,7 +2,7 @@
 {{ $desc := .Description | default .Params.summary | default .Site.Params.description }}
 {{ $imgpath := .Params.ogImage | default .Params.image }}
 {{ $ogimg := cond (ne $imgpath nil) (printf "%s%s" (strings.TrimSuffix "/" .Site.BaseURL) $imgpath) (printf "%simages/og-default.png" .Site.BaseURL) }}
-{{ $pageTitle := cond .IsHome .Site.Title (printf "%s — %s" .Title .Site.Title) }}
+{{ $pageTitle := cond .IsHome .Site.Title (printf "%s — Ethwei" .Title) }}
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 

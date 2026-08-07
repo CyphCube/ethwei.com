@@ -3,6 +3,7 @@ title: "Why Does Bitcoin Have Value?"
 date: 2026-06-21
 category: "Insights"
 summary: "Bitcoin has no factory, pays no dividends, and you can't hold it in your hand. So why is it worth tens of thousands of dollars? A clear-eyed look at scarcity, security, and the bear case."
+description: "Bitcoin has no factory, pays no dividends, and can't be held in your hand. Why is it worth tens of thousands? A clear-eyed look at scarcity and security."
 image: "/blog/why-bitcoin-has-value.jpg"
 ---
 

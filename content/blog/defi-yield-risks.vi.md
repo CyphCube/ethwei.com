@@ -3,6 +3,7 @@ title: "Rủi ro lợi suất DeFi bạn cần biết và cách kiếm lợi nhu
 date: 2026-06-21
 category: "DeFi"
 summary: "APY cao trông rất hấp dẫn trên bảng điều khiển, nhưng chúng che giấu những rủi ro thực sự — lỗi hợp đồng thông minh, tổn thất tạm thời (impermanent loss), thanh lý, rug pull, mất chốt (depeg), và nhiều hơn nữa. Đây là những gì bạn cần biết trước khi gửi một đô la đầu tiên."
+description: "APY cao ẩn chứa rủi ro thực sự — lỗi hợp đồng thông minh, tổn thất tạm thời, thanh lý, rug pull, mất chốt. Điều cần biết trước khi gửi tiền."
 image: "/blog/defi-yield-risks.jpg"
 ---
 

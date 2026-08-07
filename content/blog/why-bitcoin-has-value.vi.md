@@ -3,6 +3,7 @@ title: "Vì sao Bitcoin có giá trị?"
 date: 2026-06-21
 category: "Thông Tin Chi Tiết"
 summary: "Bitcoin không có nhà máy, không trả cổ tức, và bạn cũng không thể cầm nó trên tay. Vậy tại sao nó đáng giá hàng chục nghìn đô la? Một cái nhìn tỉnh táo về sự khan hiếm, bảo mật, và cả luận điểm phản bác."
+description: "Bitcoin không có nhà máy, không cổ tức, không thể cầm nắm. Vậy vì sao nó đáng giá hàng chục nghìn đô? Góc nhìn tỉnh táo về sự khan hiếm và bảo mật."
 image: "/blog/why-bitcoin-has-value.jpg"
 ---
 

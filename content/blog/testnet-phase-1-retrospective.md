@@ -4,6 +4,7 @@ date: 2026-08-04
 category: "Engineering"
 image: "/blog/testnet-phase-1-retrospective.jpg"
 summary: "Ethwei's first testnet ran for five weeks without an unplanned halt. That's not the interesting part. The interesting part is the four problems it surfaced — a governance bypass, a supply-cap gap, and a slashing accident — and why we removed code instead of adding more to fix them."
+description: "Ethwei's testnet ran five weeks without a halt — but the real story is four bugs we found: a governance bypass, a supply-cap gap, and a slashing accident."
 ---
 
 Ethwei's first testnet, `ethwei-testnet-1`, ran for about five weeks — 29 June to 4 August 2026 — and reached a final height of 621,526 blocks at roughly five seconds per block, with zero unplanned halts. Final supply closed at 6,999,827,484 ETE.

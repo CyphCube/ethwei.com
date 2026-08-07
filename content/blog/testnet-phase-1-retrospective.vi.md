@@ -4,6 +4,7 @@ date: 2026-08-04
 category: "Kỹ Thuật"
 image: "/blog/testnet-phase-1-retrospective.jpg"
 summary: "Testnet đầu tiên của Ethwei chạy suốt năm tuần mà không có sự cố ngừng hoạt động ngoài kế hoạch nào. Đó không phải là điều đáng nói. Điều đáng nói là bốn vấn đề mà nó phơi bày — một lỗ hổng vượt qua quản trị, một khoảng hở trong giới hạn cung, và một sự cố slashing — và vì sao chúng tôi chọn loại bỏ mã nguồn thay vì thêm nhiều mã hơn để sửa chúng."
+description: "Testnet của Ethwei chạy 5 tuần không gián đoạn — nhưng câu chuyện thật sự là 4 lỗi chúng tôi tìm ra: vượt quản trị, hở giới hạn cung, và sự cố slashing."
 ---
 
 Testnet đầu tiên của Ethwei, `ethwei-testnet-1`, đã chạy khoảng năm tuần — từ 29 tháng 6 đến 4 tháng 8 năm 2026 — và đạt độ cao cuối cùng là 621.526 block với thời gian khoảng 5 giây mỗi block, không có sự cố ngừng hoạt động ngoài kế hoạch nào. Tổng cung cuối cùng khép lại ở mức 6.999.827.484 ETE.

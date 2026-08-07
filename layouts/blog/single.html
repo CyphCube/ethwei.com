@@ -7,7 +7,7 @@
   <h1>{{ .Title }}</h1>
   <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
   {{ with .Params.image }}
-  <img src="{{ . }}" alt="" class="hero-img" />
+  <img src="{{ . }}" alt="{{ $.Title }}" class="hero-img" />
   {{ end }}
   <article>{{ .Content }}</article>
 </main>
