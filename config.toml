@@ -2,7 +2,7 @@ baseURL = "https://ethwei.com/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 disableKinds = ["taxonomy", "term", "RSS"]
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 [params]
   description = "Ethwei is a Layer 1 blockchain purpose-engineered for real world asset tokenization. Bring property, commodities, credit, and equity on-chain with enterprise-grade security."
