@@ -4,6 +4,7 @@ date: 2026-06-15
 category: "Thông Báo"
 summary: "Ethwei là blockchain Layer 1 được thiết kế riêng cho việc token hóa tài sản thực. Đây là lý do vì sao sự nhàm chán lại chính là điểm mấu chốt, và những gì chúng tôi đang xây dựng."
 description: "Ethwei là blockchain Layer 1 cho việc token hóa tài sản thực. Đây là lý do vì sao sự nhàm chán lại chính là điểm mấu chốt."
+image: "/blog/introducing-ethwei.jpg"
 ---
 
 Ethwei là blockchain Layer 1 được thiết kế riêng cho việc token hóa tài sản thực — bất động sản, hàng hóa, tín dụng và cổ phần, được đưa lên chuỗi với bảo mật cấp doanh nghiệp.

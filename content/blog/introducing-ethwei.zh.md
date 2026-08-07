@@ -4,6 +4,7 @@ date: 2026-06-15
 category: "公告"
 summary: "以太维（Ethwei）是一条专为现实世界资产代币化打造的 Layer 1 区块链。这就是为什么「无聊」才是重点，以及我们正在构建的方向。"
 description: "以太维是一条为现实世界资产代币化打造的 Layer 1 区块链。这就是为什么「无聊」才是重点。"
+image: "/blog/introducing-ethwei.jpg"
 ---
 
 以太维（Ethwei）是一条专为现实世界资产代币化打造的 Layer 1 区块链——房产、大宗商品、信贷与股权，以企业级安全带上链。

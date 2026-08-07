@@ -4,6 +4,7 @@ date: 2026-06-15
 category: "Announcements"
 summary: "Ethwei is a Layer 1 blockchain purpose-engineered for real world asset tokenization. Here is why boring is the point, and what we're building toward."
 description: "Ethwei is a Layer 1 blockchain built for real world asset tokenization. Here's why boring is the point, and what we're building toward."
+image: "/blog/introducing-ethwei.jpg"
 ---
 
 Ethwei is a Layer 1 blockchain purpose-engineered for real world asset tokenization — property, commodities, credit, and equity, brought on-chain with enterprise-grade security.
