@@ -4,8 +4,7 @@ date: 2026-06-14
 category: "보안"
 summary: "Trezor와 Ledger 같은 하드웨어 지갑은 소프트웨어 지갑과 근본적으로 다르게 작동합니다. 개인키가 절대 기기를 떠나지 않는 이유와 이것이 보안에 어떤 의미인지 알아보세요."
 description: "Trezor와 Ledger 같은 하드웨어 지갑은 소프트웨어 지갑과 근본적으로 다릅니다 — 개인키가 기기를 떠나지 않습니다."
-image: "/blog/hardware-vs-hot-wallet.svg"
-ogImage: "/blog/hardware-vs-hot-wallet-og.png"
+image: "/blog/why-trezor-and-ledger-apps-are-different.jpg"
 featured: true
 ---
 

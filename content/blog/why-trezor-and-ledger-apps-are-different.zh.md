@@ -4,8 +4,7 @@ date: 2026-06-14
 category: "安全"
 summary: "像 Trezor 和 Ledger 这样的硬件钱包，其工作原理与软件钱包有着根本的不同。了解为什么私钥永远不会离开设备，以及这对你的安全意味着什么。"
 description: "像 Trezor 和 Ledger 这样的硬件钱包工作原理与软件钱包根本不同——私钥永远不会离开设备。"
-image: "/blog/hardware-vs-hot-wallet.svg"
-ogImage: "/blog/hardware-vs-hot-wallet-og.png"
+image: "/blog/why-trezor-and-ledger-apps-are-different.jpg"
 featured: true
 ---
 

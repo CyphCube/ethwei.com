@@ -4,8 +4,7 @@ date: 2026-06-14
 category: "Bảo Mật"
 summary: "Ví cứng như Trezor và Ledger hoạt động khác biệt cơ bản so với ví phần mềm. Tìm hiểu vì sao khóa riêng tư không bao giờ rời khỏi thiết bị và điều đó có ý nghĩa gì với bảo mật của bạn."
 description: "Ví cứng như Trezor và Ledger hoạt động khác biệt cơ bản so với ví phần mềm — khóa riêng tư không bao giờ rời khỏi thiết bị."
-image: "/blog/hardware-vs-hot-wallet.svg"
-ogImage: "/blog/hardware-vs-hot-wallet-og.png"
+image: "/blog/why-trezor-and-ledger-apps-are-different.jpg"
 featured: true
 ---
 

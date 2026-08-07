@@ -4,8 +4,7 @@ date: 2026-06-14
 category: "Security"
 summary: "Hardware wallets like Trezor and Ledger work fundamentally differently from software wallets. Learn why private keys never leave the device and what that means for your security."
 description: "Hardware wallets like Trezor and Ledger work fundamentally differently from software wallets — private keys never leave the device."
-image: "/blog/hardware-vs-hot-wallet.svg"
-ogImage: "/blog/hardware-vs-hot-wallet-og.png"
+image: "/blog/why-trezor-and-ledger-apps-are-different.jpg"
 featured: true
 ---
 
