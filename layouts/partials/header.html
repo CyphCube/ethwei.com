@@ -2,7 +2,7 @@
 {{ $homeURL := cond (eq $curLang "en") "/" (printf "/%s/" $curLang) }}
 {{ $docsURL := cond (eq $curLang "en") "https://docs.ethwei.com/" (printf "https://docs.ethwei.com/%s/" $curLang) }}
 <header class="site">
-  <a href="{{ $homeURL }}" aria-label="Ethwei home"><img src="/images/logo.png" alt="Ethwei" class="logo" /></a>
+  <a href="{{ $homeURL }}" aria-label="Ethwei home"><img src="/images/logo.png" alt="Ethwei" class="logo" width="200" height="200" /></a>
 
   <nav class="main-nav">
     <a href="{{ $homeURL }}#apps">{{ T "nav_apps" }}</a>

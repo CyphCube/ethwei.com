@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ $curLang := .Site.Language.Lang }}
+{{ $homeURL := cond (eq $curLang "en") "/" (printf "/%s/" $curLang) }}
+<main class="wrap" style="text-align:center; padding-top:80px; padding-bottom:120px;">
+  <h1 class="page-title">404</h1>
+  <p class="page-sub">{{ T "404_sub" }}</p>
+  <a href="{{ $homeURL }}" class="app-open-link" style="display:inline-flex;">{{ T "404_home" }} →</a>
+</main>
+{{ end }}
