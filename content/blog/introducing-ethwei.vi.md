@@ -1,5 +1,6 @@
 ---
 title: "Giới thiệu Ethwei: Một blockchain nhàm chán cho tài sản thực"
+seoTitle: "Giới thiệu Ethwei: Blockchain nhàm chán"
 date: 2026-06-15
 category: "Thông Báo"
 summary: "Ethwei là blockchain Layer 1 được thiết kế riêng cho việc token hóa tài sản thực. Đây là lý do vì sao sự nhàm chán lại chính là điểm mấu chốt, và những gì chúng tôi đang xây dựng."

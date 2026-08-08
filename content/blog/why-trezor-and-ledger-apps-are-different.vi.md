@@ -1,5 +1,6 @@
 ---
 title: "Vì sao ứng dụng Trezor và Ledger khác với ứng dụng ví tiền điện tử thông thường"
+seoTitle: "Vì sao Trezor và Ledger khác ứng dụng ví thường"
 date: 2026-06-14
 category: "Bảo Mật"
 summary: "Ví cứng như Trezor và Ledger hoạt động khác biệt cơ bản so với ví phần mềm. Tìm hiểu vì sao khóa riêng tư không bao giờ rời khỏi thiết bị và điều đó có ý nghĩa gì với bảo mật của bạn."

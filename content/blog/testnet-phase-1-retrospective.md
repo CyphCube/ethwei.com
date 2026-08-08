@@ -1,5 +1,6 @@
 ---
 title: "Testnet Phase 1 Retrospective: The Bugs We Found Before Mainnet Did"
+seoTitle: "Testnet Phase 1 Retrospective: Bugs We Found"
 date: 2026-08-04
 category: "Engineering"
 image: "/blog/testnet-phase-1-retrospective.jpg"

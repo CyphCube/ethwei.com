@@ -1,5 +1,6 @@
 ---
 title: "Tổng kết Testnet Giai đoạn 1: Những lỗi chúng tôi tìm ra trước khi mainnet làm điều đó"
+seoTitle: "Tổng kết Testnet Giai đoạn 1: Các lỗi tìm thấy"
 date: 2026-08-04
 category: "Kỹ Thuật"
 image: "/blog/testnet-phase-1-retrospective.jpg"
