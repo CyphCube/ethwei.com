@@ -4,6 +4,7 @@ date: 2026-06-10
 category: "Engineering"
 summary: "Our public testnet is approaching. Here is what developers can expect when building on the Ethwei testnet."
 description: "Our public testnet is approaching. Here's what developers can expect when building on the Ethwei testnet."
+image: "/blog/testnet-on-the-way.jpg"
 ---
 
 The Ethwei testnet is approaching. This post covers what it's built on, and what to expect once it's live.

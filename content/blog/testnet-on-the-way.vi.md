@@ -4,6 +4,7 @@ date: 2026-06-10
 category: "Kỹ Thuật"
 summary: "Testnet công khai của chúng tôi đang đến gần. Đây là những gì các nhà phát triển có thể mong đợi khi xây dựng trên testnet của Ethwei."
 description: "Testnet công khai đang đến gần. Đây là những gì nhà phát triển có thể mong đợi trên testnet Ethwei."
+image: "/blog/testnet-on-the-way.jpg"
 ---
 
 Testnet của Ethwei đang đến gần. Bài viết này nói về nền tảng nó được xây dựng trên, và những gì bạn có thể mong đợi khi nó ra mắt.
