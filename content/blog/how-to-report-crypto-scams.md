@@ -57,6 +57,9 @@ Projects that draw large volumes of scam complaints, class-action interest, and 
 **India**
 - National Cyber Crime Reporting Portal: [cybercrime.gov.in](https://cybercrime.gov.in), or call **1930**
 
+**United Arab Emirates**
+- eCrime, UAE Ministry of Interior's federal cybercrime reporting platform: [ecrime.ae](https://ecrime.ae)
+
 **China**
 - Report to your local **公安机关 (Public Security Bureau)**, or via the national illegal-information reporting line [12377](http://www.12377.cn)
 

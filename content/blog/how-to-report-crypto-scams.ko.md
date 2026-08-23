@@ -56,6 +56,9 @@ description: "암호화폐 사기를 올바른 기관과 플랫폼에 신고하�
 **인도**
 - 국가 사이버범죄 신고 포털: [cybercrime.gov.in](https://cybercrime.gov.in), 또는 **1930**으로 전화
 
+**아랍에미리트**
+- eCrime — UAE 내무부의 연방 사이버범죄 신고 플랫폼: [ecrime.ae](https://ecrime.ae)
+
 **중국**
 - 현지 **공안기관**에 신고, 또는 전국 불법정보 신고 핫라인 [12377](http://www.12377.cn)
 

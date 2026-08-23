@@ -57,6 +57,9 @@ Những dự án thu hút số lượng lớn khiếu nại lừa đảo, sự q
 **Ấn Độ**
 - Cổng Báo cáo Tội phạm mạng Quốc gia: [cybercrime.gov.in](https://cybercrime.gov.in), hoặc gọi **1930**
 
+**Các Tiểu vương quốc Ả Rập Thống nhất**
+- eCrime — nền tảng báo cáo tội phạm mạng liên bang của Bộ Nội vụ UAE: [ecrime.ae](https://ecrime.ae)
+
 **Trung Quốc**
 - Báo cáo với **cơ quan công an** địa phương, hoặc đường dây nóng báo cáo thông tin bất hợp pháp quốc gia [12377](http://www.12377.cn)
 

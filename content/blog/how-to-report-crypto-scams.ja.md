@@ -56,6 +56,9 @@ description: "暗号資産詐欺を正しい機関やプラットフォームに
 **インド**
 - 国家サイバー犯罪通報ポータル：[cybercrime.gov.in](https://cybercrime.gov.in)、または **1930** に電話
 
+**アラブ首長国連邦**
+- eCrime——UAE内務省の連邦サイバー犯罪通報プラットフォーム：[ecrime.ae](https://ecrime.ae)
+
 **中国**
 - 最寄りの**公安機関**に通報、または全国違法情報通報ホットライン [12377](http://www.12377.cn)
 

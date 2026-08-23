@@ -56,6 +56,9 @@ description: "一份实用的分国家指南，教你向正确的机构和平台
 **印度**
 - 国家网络犯罪举报门户：[cybercrime.gov.in](https://cybercrime.gov.in)，或拨打 **1930**
 
+**阿拉伯联合酋长国**
+- eCrime——阿联酋内政部的联邦网络犯罪举报平台：[ecrime.ae](https://ecrime.ae)
+
 **中国**
 - 向当地**公安机关**举报，或拨打全国网络违法犯罪举报热线 [12377](http://www.12377.cn)
 
