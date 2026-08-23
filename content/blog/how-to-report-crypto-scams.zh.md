@@ -32,35 +32,35 @@ description: "一份实用的分国家指南，教你向正确的机构和平台
 ## 各国举报渠道
 
 **美国**
-- 联邦调查局互联网犯罪投诉中心：**ic3.gov**
-- 联邦贸易委员会：**reportfraud.ftc.gov**
-- 商品期货交易委员会（涉及大宗商品/衍生品类诈骗）：**cftc.gov/complaint**
+- 联邦调查局互联网犯罪投诉中心：[ic3.gov](https://www.ic3.gov)
+- 联邦贸易委员会：[reportfraud.ftc.gov](https://reportfraud.ftc.gov)
+- 商品期货交易委员会（涉及大宗商品/衍生品类诈骗）：[cftc.gov/complaint](https://www.cftc.gov/complaint)
 
 **英国**
-- Action Fraud：**actionfraud.police.uk**
+- Action Fraud：[actionfraud.police.uk](https://www.actionfraud.police.uk)
 
 **欧盟**
 - 向你所在国家警方的网络犯罪部门举报——大多数欧盟国家都有专门的在线网络犯罪举报门户。Europol 负责协调跨国案件，但不直接受理个人举报。
 
 **加拿大**
-- 加拿大反欺诈中心：**antifraudcentre-centreantifraude.ca**
+- 加拿大反欺诈中心：[antifraudcentre-centreantifraude.ca](https://www.antifraudcentre-centreantifraude.ca)
 
 **澳大利亚**
-- Scamwatch（澳大利亚竞争与消费者委员会）：**scamwatch.gov.au**
-- ASIC（涉及投资类诈骗）：**asic.gov.au**
+- Scamwatch（澳大利亚竞争与消费者委员会）：[scamwatch.gov.au](https://www.scamwatch.gov.au)
+- ASIC（涉及投资类诈骗）：[asic.gov.au](https://asic.gov.au)
 
 **新加坡**
-- 新加坡警察部队在线服务，或拨打 **ScamShield 热线 1799**
-- 涉及受监管实体的问题可联系新加坡金融管理局：**mas.gov.sg**
+- [新加坡警察部队在线服务](https://www.police.gov.sg/iwitness)，或拨打 **ScamShield 热线 1799**
+- 涉及受监管实体的问题可联系新加坡金融管理局：[mas.gov.sg](https://www.mas.gov.sg)
 
 **印度**
-- 国家网络犯罪举报门户：**cybercrime.gov.in**，或拨打 **1930**
+- 国家网络犯罪举报门户：[cybercrime.gov.in](https://cybercrime.gov.in)，或拨打 **1930**
 
 **中国**
-- 向当地**公安机关**举报，或拨打全国网络违法犯罪举报热线 **12377**
+- 向当地**公安机关**举报，或拨打全国网络违法犯罪举报热线 [12377](http://www.12377.cn)
 
 **韩国**
-- 韩国国家警察厅网络安全局：**ecrm.police.go.kr**，或拨打 **112**
+- 韩国国家警察厅网络安全局：[ecrm.police.go.kr](https://ecrm.police.go.kr)，或拨打 **112**
 
 **日本**
 - 你所在都道府县警察的网络犯罪咨询窗口，或拨打消费者热线 **188**

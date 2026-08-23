@@ -32,35 +32,35 @@ description: "暗号資産詐欺を正しい機関やプラットフォームに
 ## 国別の通報先
 
 **アメリカ合衆国**
-- FBI インターネット犯罪苦情センター：**ic3.gov**
-- 連邦取引委員会：**reportfraud.ftc.gov**
-- CFTC（商品・デリバティブ関連の詐欺）：**cftc.gov/complaint**
+- FBI インターネット犯罪苦情センター：[ic3.gov](https://www.ic3.gov)
+- 連邦取引委員会：[reportfraud.ftc.gov](https://reportfraud.ftc.gov)
+- CFTC（商品・デリバティブ関連の詐欺）：[cftc.gov/complaint](https://www.cftc.gov/complaint)
 
 **イギリス**
-- Action Fraud：**actionfraud.police.uk**
+- Action Fraud：[actionfraud.police.uk](https://www.actionfraud.police.uk)
 
 **EU**
 - お住まいの国の警察のサイバー犯罪部門に通報してください——ほとんどのEU諸国には専用のオンラインサイバー犯罪通報ポータルがあります。Europol は国境を越えた事件を調整しますが、個人からの通報は直接受け付けていません。
 
 **カナダ**
-- カナダ反詐欺センター：**antifraudcentre-centreantifraude.ca**
+- カナダ反詐欺センター：[antifraudcentre-centreantifraude.ca](https://www.antifraudcentre-centreantifraude.ca)
 
 **オーストラリア**
-- Scamwatch（ACCC）：**scamwatch.gov.au**
-- ASIC（投資詐欺関連）：**asic.gov.au**
+- Scamwatch（ACCC）：[scamwatch.gov.au](https://www.scamwatch.gov.au)
+- ASIC（投資詐欺関連）：[asic.gov.au](https://asic.gov.au)
 
 **シンガポール**
-- シンガポール警察のオンラインサービス、または **ScamShield ホットライン（1799）**
-- 規制対象事業者に関する懸念はシンガポール金融管理局：**mas.gov.sg**
+- [シンガポール警察のオンラインサービス](https://www.police.gov.sg/iwitness)、または **ScamShield ホットライン（1799）**
+- 規制対象事業者に関する懸念はシンガポール金融管理局：[mas.gov.sg](https://www.mas.gov.sg)
 
 **インド**
-- 国家サイバー犯罪通報ポータル：**cybercrime.gov.in**、または **1930** に電話
+- 国家サイバー犯罪通報ポータル：[cybercrime.gov.in](https://cybercrime.gov.in)、または **1930** に電話
 
 **中国**
-- 最寄りの**公安機関**に通報、または全国違法情報通報ホットライン **12377**
+- 最寄りの**公安機関**に通報、または全国違法情報通報ホットライン [12377](http://www.12377.cn)
 
 **韓国**
-- 韓国国家警察庁サイバー捜査局：**ecrm.police.go.kr**、または **112**
+- 韓国国家警察庁サイバー捜査局：[ecrm.police.go.kr](https://ecrm.police.go.kr)、または **112**
 
 **日本**
 - 都道府県警察のサイバー犯罪相談窓口、または消費者ホットライン **188**

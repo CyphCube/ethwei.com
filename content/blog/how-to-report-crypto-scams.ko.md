@@ -32,35 +32,35 @@ description: "암호화폐 사기를 올바른 기관과 플랫폼에 신고하�
 ## 국가별 신고처
 
 **미국**
-- FBI 인터넷 범죄 신고 센터: **ic3.gov**
-- 연방거래위원회: **reportfraud.ftc.gov**
-- CFTC (상품/파생상품 관련 사기): **cftc.gov/complaint**
+- FBI 인터넷 범죄 신고 센터: [ic3.gov](https://www.ic3.gov)
+- 연방거래위원회: [reportfraud.ftc.gov](https://reportfraud.ftc.gov)
+- CFTC (상품/파생상품 관련 사기): [cftc.gov/complaint](https://www.cftc.gov/complaint)
 
 **영국**
-- Action Fraud: **actionfraud.police.uk**
+- Action Fraud: [actionfraud.police.uk](https://www.actionfraud.police.uk)
 
 **유럽연합**
 - 본인 국가 경찰의 사이버범죄 부서에 신고하세요 — 대부분의 EU 국가는 전용 온라인 사이버범죄 신고 포털을 운영합니다. Europol은 국경 간 사건을 조율하지만 개인 신고는 직접 받지 않습니다.
 
 **캐나다**
-- 캐나다 반사기 센터: **antifraudcentre-centreantifraude.ca**
+- 캐나다 반사기 센터: [antifraudcentre-centreantifraude.ca](https://www.antifraudcentre-centreantifraude.ca)
 
 **호주**
-- Scamwatch (ACCC): **scamwatch.gov.au**
-- ASIC (투자 사기 관련): **asic.gov.au**
+- Scamwatch (ACCC): [scamwatch.gov.au](https://www.scamwatch.gov.au)
+- ASIC (투자 사기 관련): [asic.gov.au](https://asic.gov.au)
 
 **싱가포르**
-- 싱가포르 경찰 온라인 서비스, 또는 **ScamShield 핫라인 (1799)**
-- 규제 대상 기관 관련 문제는 싱가포르 통화청: **mas.gov.sg**
+- [싱가포르 경찰 온라인 서비스](https://www.police.gov.sg/iwitness), 또는 **ScamShield 핫라인 (1799)**
+- 규제 대상 기관 관련 문제는 싱가포르 통화청: [mas.gov.sg](https://www.mas.gov.sg)
 
 **인도**
-- 국가 사이버범죄 신고 포털: **cybercrime.gov.in**, 또는 **1930**으로 전화
+- 국가 사이버범죄 신고 포털: [cybercrime.gov.in](https://cybercrime.gov.in), 또는 **1930**으로 전화
 
 **중국**
-- 현지 **공안기관**에 신고, 또는 전국 불법정보 신고 핫라인 **12377**
+- 현지 **공안기관**에 신고, 또는 전국 불법정보 신고 핫라인 [12377](http://www.12377.cn)
 
 **한국**
-- 경찰청 사이버수사국: **ecrm.police.go.kr**, 또는 **112**
+- 경찰청 사이버수사국: [ecrm.police.go.kr](https://ecrm.police.go.kr), 또는 **112**
 
 **일본**
 - 관할 도도부현 경찰의 사이버범죄 상담 창구, 또는 소비자 핫라인 **188**

@@ -33,35 +33,35 @@ Projects that draw large volumes of scam complaints, class-action interest, and 
 ## Where to report, by country
 
 **United States**
-- FBI's Internet Crime Complaint Center: **ic3.gov**
-- Federal Trade Commission: **reportfraud.ftc.gov**
-- CFTC (for commodity/derivatives-related fraud): **cftc.gov/complaint**
+- FBI's Internet Crime Complaint Center: [ic3.gov](https://www.ic3.gov)
+- Federal Trade Commission: [reportfraud.ftc.gov](https://reportfraud.ftc.gov)
+- CFTC (for commodity/derivatives-related fraud): [cftc.gov/complaint](https://www.cftc.gov/complaint)
 
 **United Kingdom**
-- Action Fraud: **actionfraud.police.uk**
+- Action Fraud: [actionfraud.police.uk](https://www.actionfraud.police.uk)
 
 **European Union**
 - Report to your national police's cybercrime unit — most EU countries have a dedicated online cybercrime reporting portal. Europol coordinates cross-border cases but does not take individual reports directly.
 
 **Canada**
-- Canadian Anti-Fraud Centre: **antifraudcentre-centreantifraude.ca**
+- Canadian Anti-Fraud Centre: [antifraudcentre-centreantifraude.ca](https://www.antifraudcentre-centreantifraude.ca)
 
 **Australia**
-- Scamwatch (ACCC): **scamwatch.gov.au**
-- ASIC (for investment scams): **asic.gov.au**
+- Scamwatch (ACCC): [scamwatch.gov.au](https://www.scamwatch.gov.au)
+- ASIC (for investment scams): [asic.gov.au](https://asic.gov.au)
 
 **Singapore**
-- Singapore Police Force e-service, or call the **ScamShield helpline (1799)**
-- Monetary Authority of Singapore for regulated-entity concerns: **mas.gov.sg**
+- [Singapore Police Force e-service](https://www.police.gov.sg/iwitness), or call the **ScamShield helpline (1799)**
+- Monetary Authority of Singapore for regulated-entity concerns: [mas.gov.sg](https://www.mas.gov.sg)
 
 **India**
-- National Cyber Crime Reporting Portal: **cybercrime.gov.in**, or call **1930**
+- National Cyber Crime Reporting Portal: [cybercrime.gov.in](https://cybercrime.gov.in), or call **1930**
 
 **China**
-- Report to your local **公安机关 (Public Security Bureau)**, or via the national illegal-information reporting line **12377**
+- Report to your local **公安机关 (Public Security Bureau)**, or via the national illegal-information reporting line [12377](http://www.12377.cn)
 
 **South Korea**
-- Cyber Bureau of the Korean National Police Agency: **ecrm.police.go.kr**, or call **112**
+- Cyber Bureau of the Korean National Police Agency: [ecrm.police.go.kr](https://ecrm.police.go.kr), or call **112**
 
 **Japan**
 - Your local prefectural police's cybercrime consultation desk (都道府県警察のサイバー犯罪相談窓口), or the Consumer Hotline: **188**

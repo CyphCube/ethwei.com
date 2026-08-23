@@ -33,35 +33,35 @@ Những dự án thu hút số lượng lớn khiếu nại lừa đảo, sự q
 ## Nơi báo cáo, theo từng quốc gia
 
 **Hoa Kỳ**
-- Trung tâm Khiếu nại Tội phạm Internet của FBI: **ic3.gov**
-- Ủy ban Thương mại Liên bang: **reportfraud.ftc.gov**
-- CFTC (đối với gian lận liên quan đến hàng hóa/phái sinh): **cftc.gov/complaint**
+- Trung tâm Khiếu nại Tội phạm Internet của FBI: [ic3.gov](https://www.ic3.gov)
+- Ủy ban Thương mại Liên bang: [reportfraud.ftc.gov](https://reportfraud.ftc.gov)
+- CFTC (đối với gian lận liên quan đến hàng hóa/phái sinh): [cftc.gov/complaint](https://www.cftc.gov/complaint)
 
 **Vương quốc Anh**
-- Action Fraud: **actionfraud.police.uk**
+- Action Fraud: [actionfraud.police.uk](https://www.actionfraud.police.uk)
 
 **Liên minh Châu Âu**
 - Báo cáo cho đơn vị tội phạm mạng của cảnh sát quốc gia bạn — hầu hết các nước EU đều có cổng báo cáo tội phạm mạng trực tuyến riêng. Europol điều phối các vụ việc xuyên biên giới nhưng không trực tiếp nhận báo cáo cá nhân.
 
 **Canada**
-- Trung tâm Chống Lừa đảo Canada: **antifraudcentre-centreantifraude.ca**
+- Trung tâm Chống Lừa đảo Canada: [antifraudcentre-centreantifraude.ca](https://www.antifraudcentre-centreantifraude.ca)
 
 **Úc**
-- Scamwatch (ACCC): **scamwatch.gov.au**
-- ASIC (đối với lừa đảo đầu tư): **asic.gov.au**
+- Scamwatch (ACCC): [scamwatch.gov.au](https://www.scamwatch.gov.au)
+- ASIC (đối với lừa đảo đầu tư): [asic.gov.au](https://asic.gov.au)
 
 **Singapore**
-- Dịch vụ trực tuyến của Cảnh sát Singapore, hoặc gọi đường dây nóng **ScamShield (1799)**
-- Đối với các vấn đề liên quan đến tổ chức được quản lý: Cơ quan Tiền tệ Singapore: **mas.gov.sg**
+- [Dịch vụ trực tuyến của Cảnh sát Singapore](https://www.police.gov.sg/iwitness), hoặc gọi đường dây nóng **ScamShield (1799)**
+- Đối với các vấn đề liên quan đến tổ chức được quản lý: Cơ quan Tiền tệ Singapore: [mas.gov.sg](https://www.mas.gov.sg)
 
 **Ấn Độ**
-- Cổng Báo cáo Tội phạm mạng Quốc gia: **cybercrime.gov.in**, hoặc gọi **1930**
+- Cổng Báo cáo Tội phạm mạng Quốc gia: [cybercrime.gov.in](https://cybercrime.gov.in), hoặc gọi **1930**
 
 **Trung Quốc**
-- Báo cáo với **cơ quan công an** địa phương, hoặc đường dây nóng báo cáo thông tin bất hợp pháp quốc gia **12377**
+- Báo cáo với **cơ quan công an** địa phương, hoặc đường dây nóng báo cáo thông tin bất hợp pháp quốc gia [12377](http://www.12377.cn)
 
 **Hàn Quốc**
-- Cục Điều tra Mạng, Cơ quan Cảnh sát Quốc gia Hàn Quốc: **ecrm.police.go.kr**, hoặc gọi **112**
+- Cục Điều tra Mạng, Cơ quan Cảnh sát Quốc gia Hàn Quốc: [ecrm.police.go.kr](https://ecrm.police.go.kr), hoặc gọi **112**
 
 **Nhật Bản**
 - Bàn tư vấn tội phạm mạng của cảnh sát tỉnh nơi bạn cư trú, hoặc Đường dây nóng Người tiêu dùng: **188**
