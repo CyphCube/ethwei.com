@@ -5,6 +5,7 @@ date: 2026-08-23
 category: "Security"
 summary: "Crypto expands financial freedom — and it expands scammers' reach too, the same way the internet expanded both information freedom and fake news. Here's a practical, country-by-country guide to reporting a crypto scam."
 description: "A practical, country-by-country guide to reporting crypto scams to the right authorities and platforms."
+image: "/blog/how-to-report-crypto-scams.jpg"
 ---
 
 Blockchain and crypto are, in our view, one of the best tools built so far for expanding people's financial freedom. But every technology that expands freedom expands the reach of bad actors too. The internet expanded everyone's access to information — and also gave scammers and fake news a bigger megaphone. Crypto is no different: it expands financial freedom, and it expands scammers' ability to reach victims globally, instantly, and often with little accountability.

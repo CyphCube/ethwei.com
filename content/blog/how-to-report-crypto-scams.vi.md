@@ -5,6 +5,7 @@ date: 2026-08-23
 category: "Bảo Mật"
 summary: "Crypto mở rộng tự do tài chính của con người — và nó cũng mở rộng phạm vi hoạt động của những kẻ lừa đảo, giống như internet mở rộng tự do thông tin nhưng cũng mở rộng tin giả. Đây là hướng dẫn thực tế, theo từng quốc gia, để báo cáo lừa đảo crypto."
 description: "Hướng dẫn thực tế, theo từng quốc gia, để báo cáo lừa đảo crypto đến đúng cơ quan và nền tảng."
+image: "/blog/how-to-report-crypto-scams.jpg"
 ---
 
 Theo quan điểm của chúng tôi, blockchain và crypto là một trong những công cụ tốt nhất từng được xây dựng để mở rộng tự do tài chính của con người. Nhưng bất kỳ công nghệ nào mở rộng tự do cũng đồng thời mở rộng phạm vi hoạt động của kẻ xấu. Internet mở rộng khả năng tiếp cận thông tin của mọi người — và cũng trao cho những kẻ lừa đảo và tin giả một chiếc loa phóng thanh lớn hơn. Crypto cũng không khác: nó mở rộng tự do tài chính, và nó cũng mở rộng khả năng của kẻ lừa đảo trong việc tiếp cận nạn nhân trên toàn cầu, tức thì, và thường không phải chịu trách nhiệm.
