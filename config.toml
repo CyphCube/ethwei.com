@@ -19,7 +19,7 @@ enableRobotsTXT = false
     label = "English"
     locale = "en"
     weight = 1
-    title = "Ethwei - Start DeFi simply. Stay safe."
+    title = "Ethwei - Start DeFi simply and safely."
     [languages.en.params]
       description = "Ethwei is a beginner-friendly DeFi portal. Set up a wallet safely, check gas fees, understand DeFi risks, and practice on testnets before you use real money."
 
@@ -27,7 +27,7 @@ enableRobotsTXT = false
     label = "中文"
     locale = "zh-Hans"
     weight = 2
-    title = "Ethwei - Start DeFi simply. Stay safe."
+    title = "Ethwei - Start DeFi simply and safely."
     [languages.zh.params]
       description = "Ethwei is a beginner-friendly DeFi portal. Set up a wallet safely, check gas fees, understand DeFi risks, and practice on testnets before you use real money."
 
@@ -35,7 +35,7 @@ enableRobotsTXT = false
     label = "한국어"
     locale = "ko"
     weight = 3
-    title = "Ethwei - Start DeFi simply. Stay safe."
+    title = "Ethwei - Start DeFi simply and safely."
     [languages.ko.params]
       description = "Ethwei is a beginner-friendly DeFi portal. Set up a wallet safely, check gas fees, understand DeFi risks, and practice on testnets before you use real money."
 
@@ -43,7 +43,7 @@ enableRobotsTXT = false
     label = "日本語"
     locale = "ja"
     weight = 4
-    title = "Ethwei - Start DeFi simply. Stay safe."
+    title = "Ethwei - Start DeFi simply and safely."
     [languages.ja.params]
       description = "Ethwei is a beginner-friendly DeFi portal. Set up a wallet safely, check gas fees, understand DeFi risks, and practice on testnets before you use real money."
 
@@ -51,6 +51,6 @@ enableRobotsTXT = false
     label = "Tiếng Việt"
     locale = "vi"
     weight = 5
-    title = "Ethwei - Start DeFi simply. Stay safe."
+    title = "Ethwei - Start DeFi simply and safely."
     [languages.vi.params]
       description = "Ethwei is a beginner-friendly DeFi portal. Set up a wallet safely, check gas fees, understand DeFi risks, and practice on testnets before you use real money."

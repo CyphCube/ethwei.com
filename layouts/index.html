@@ -36,7 +36,7 @@
 
   <section class="portal-section" id="playground">
     {{ partial "section-header.html" (dict "title" (T "playground_title") "sub" (T "playground_sub") "url" $apps.playground "label" (T "open_full_app")) }}
-    {{ partial "widgets/playground.html" (dict "ctx" . "walletURL" $walletURL) }}
+    {{ partial "widgets/playground.html" . }}
   </section>
 </main>
 {{ end }}
