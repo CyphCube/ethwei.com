@@ -1,0 +1,20 @@
+<div class="widget-card gas-widget" id="gas-widget"
+     data-loading="{{ T "gas_loading" }}"
+     data-unavailable="{{ T "gas_unavailable" }}"
+     data-updated="{{ T "gas_updated" }}">
+  <div class="gas-head">
+    <span class="gas-col">{{ T "gas_col_chain" }}</span>
+    <span class="gas-col gas-col-price">{{ T "gas_col_price" }}</span>
+  </div>
+  <ul class="gas-list" id="gas-list" aria-live="polite">
+    <li class="gas-row gas-empty">{{ T "gas_loading" }}</li>
+  </ul>
+  <div class="gas-foot">
+    <span class="gas-note">{{ T "gas_note" }}</span>
+    <span class="gas-actions">
+      <span class="gas-updated" id="gas-updated"></span>
+      <button type="button" class="widget-btn" id="gas-refresh">{{ T "gas_refresh" }}</button>
+    </span>
+  </div>
+</div>
+<script src="/js/gas-widget.js" defer></script>

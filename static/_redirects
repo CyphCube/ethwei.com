@@ -4,3 +4,23 @@
 
 /kr/*            /ko/:splat       301
 /kr              /ko/             301
+/blog/introducing-ethwei/  /blog/  301
+/zh/blog/introducing-ethwei/  /zh/blog/  301
+/ko/blog/introducing-ethwei/  /ko/blog/  301
+/ja/blog/introducing-ethwei/  /ja/blog/  301
+/vi/blog/introducing-ethwei/  /vi/blog/  301
+/blog/testnet-on-the-way/  /blog/  301
+/zh/blog/testnet-on-the-way/  /zh/blog/  301
+/ko/blog/testnet-on-the-way/  /ko/blog/  301
+/ja/blog/testnet-on-the-way/  /ja/blog/  301
+/vi/blog/testnet-on-the-way/  /vi/blog/  301
+/blog/testnet-phase-1-retrospective/  /blog/  301
+/zh/blog/testnet-phase-1-retrospective/  /zh/blog/  301
+/ko/blog/testnet-phase-1-retrospective/  /ko/blog/  301
+/ja/blog/testnet-phase-1-retrospective/  /ja/blog/  301
+/vi/blog/testnet-phase-1-retrospective/  /vi/blog/  301
+/blog/why-rwa-needs-its-own-chain/  /blog/  301
+/zh/blog/why-rwa-needs-its-own-chain/  /zh/blog/  301
+/ko/blog/why-rwa-needs-its-own-chain/  /ko/blog/  301
+/ja/blog/why-rwa-needs-its-own-chain/  /ja/blog/  301
+/vi/blog/why-rwa-needs-its-own-chain/  /vi/blog/  301

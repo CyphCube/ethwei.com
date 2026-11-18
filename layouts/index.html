@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $curLang := .Site.Language.Lang }}
-{{ $sacklinkURL := cond (eq $curLang "en") "https://sacklink.com/" (printf "https://sacklink.com/%s/" $curLang) }}
+{{ $apps := .Site.Params.apps }}
+{{ $walletURL := cond (eq $curLang "en") $apps.wallet (printf "%s%s/" $apps.wallet $curLang) }}
 <main>
   <section class="hero">
     <div class="hero-bg">
@@ -14,41 +15,28 @@
     <div class="hero-content">
       <h1 class="hero-title">{{ T "hero_title" }}</h1>
       <p class="hero-sub">{{ T "hero_sub" }}</p>
-      <p class="testnet">{{ T "testnet" }}</p>
+      <p class="testnet">{{ T "hero_tag" }}</p>
     </div>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>{{ T "feat_simple_title" }}</h3>
-      <p>{{ T "feat_simple_desc" }}</p>
-    </div>
-    <div class="feature">
-      <h3>{{ T "feat_secure_title" }}</h3>
-      <p>{{ T "feat_secure_desc" }}</p>
-    </div>
-    <div class="feature">
-      <h3>{{ T "feat_decentral_title" }}</h3>
-      <p>{{ T "feat_decentral_desc" }}</p>
-    </div>
+  <section class="portal-section" id="wallet">
+    {{ partial "section-header.html" (dict "title" (T "wallet_title") "sub" (T "wallet_sub") "url" $walletURL "label" (T "open_full_app")) }}
+    {{ partial "widgets/wallet.html" . }}
   </section>
 
-  {{ partial "testnet-stats.html" . }}
+  <section class="portal-section" id="gas">
+    {{ partial "section-header.html" (dict "title" (T "gas_title") "sub" (T "gas_sub") "url" $apps.gas "label" (T "open_full_app")) }}
+    {{ partial "widgets/gas.html" . }}
+  </section>
 
-  <section class="apps-section" id="apps">
-    <h2 class="apps-title">{{ T "apps_title" }}</h2>
-    <p class="apps-sub">{{ T "apps_sub" }}</p>
+  <section class="portal-section" id="defi">
+    {{ partial "section-header.html" (dict "title" (T "defi_title") "sub" (T "defi_sub") "url" $apps.defi "label" (T "open_full_app")) }}
+    {{ partial "widgets/defi.html" . }}
+  </section>
 
-    <div class="app-grid">
-      <div class="app-card">
-        <div class="app-card-header">
-          <img src="/images/sacklink-logo.png" alt="Sacklink" class="app-icon" width="44" height="44" />
-          <h3>{{ T "app_sacklink_name" }}</h3>
-        </div>
-        <p>{{ T "app_sacklink_desc" }}</p>
-        <a href="{{ $sacklinkURL }}" target="_blank" rel="noopener noreferrer" class="app-open-link">{{ T "app_open" }} →</a>
-      </div>
-    </div>
+  <section class="portal-section" id="playground">
+    {{ partial "section-header.html" (dict "title" (T "playground_title") "sub" (T "playground_sub") "url" $apps.playground "label" (T "open_full_app")) }}
+    {{ partial "widgets/playground.html" (dict "ctx" . "walletURL" $walletURL) }}
   </section>
 </main>
 {{ end }}

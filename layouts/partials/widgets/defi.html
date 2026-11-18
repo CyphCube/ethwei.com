@@ -1,0 +1,14 @@
+<div class="widget-grid widget-grid-4">
+  {{ range first 4 .Site.Data.defi_directory.entries }}
+  <div class="widget-card defi-card">
+    <div class="defi-top">
+      <h3>{{ .name }}</h3>
+      <span class="risk-badge risk-{{ .risk }}">{{ T "defi_risk_label" }}: {{ T (printf "defi_risk_%s" .risk) }}</span>
+    </div>
+    <span class="defi-type">{{ .type }}</span>
+    <p>{{ .what }}</p>
+    <p class="defi-reason">{{ .reason }}</p>
+  </div>
+  {{ end }}
+</div>
+<p class="widget-disclaimer">{{ T "defi_disclaimer" }}</p>

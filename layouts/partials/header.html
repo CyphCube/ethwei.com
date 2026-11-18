@@ -1,13 +1,13 @@
 {{ $curLang := .Site.Language.Lang }}
 {{ $homeURL := cond (eq $curLang "en") "/" (printf "/%s/" $curLang) }}
-{{ $docsURL := cond (eq $curLang "en") "https://docs.ethwei.com/" (printf "https://docs.ethwei.com/%s/" $curLang) }}
 <header class="site">
   <a href="{{ $homeURL }}" aria-label="Ethwei home"><img src="/images/logo.png" alt="Ethwei" class="logo" width="200" height="200" /></a>
 
   <nav class="main-nav">
-    <a href="{{ $homeURL }}#apps">{{ T "nav_apps" }}</a>
-    <a href="{{ $docsURL }}" target="_blank" rel="noopener noreferrer">{{ T "nav_docs" }}</a>
-    <a href="https://explorer.ethwei.com/" target="_blank" rel="noopener noreferrer">{{ T "nav_explorer" }}</a>
+    <a href="{{ $homeURL }}#wallet">{{ T "nav_wallet" }}</a>
+    <a href="{{ $homeURL }}#gas">{{ T "nav_gas" }}</a>
+    <a href="{{ $homeURL }}#defi">{{ T "nav_defi" }}</a>
+    <a href="{{ $homeURL }}#playground">{{ T "nav_playground" }}</a>
   </nav>
 
   <span class="spacer"></span>
@@ -44,9 +44,10 @@
   </button>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="{{ $homeURL }}#apps">{{ T "nav_apps" }}</a>
-    <a href="{{ $docsURL }}" target="_blank" rel="noopener noreferrer">{{ T "nav_docs" }}</a>
-    <a href="https://explorer.ethwei.com/" target="_blank" rel="noopener noreferrer">{{ T "nav_explorer" }}</a>
+    <a href="{{ $homeURL }}#wallet">{{ T "nav_wallet" }}</a>
+    <a href="{{ $homeURL }}#gas">{{ T "nav_gas" }}</a>
+    <a href="{{ $homeURL }}#defi">{{ T "nav_defi" }}</a>
+    <a href="{{ $homeURL }}#playground">{{ T "nav_playground" }}</a>
     <div class="mobile-menu-sep"></div>
     <div class="mobile-lang-list">
       {{ range hugo.Sites }}
