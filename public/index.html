@@ -325,9 +325,13 @@
 
   .gas-widget { padding: 8px 20px 16px; }
   .gas-head, .gas-row {
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center; gap: 16px;
     padding: 12px 0;
   }
+  .gas-col-price, .gas-price { text-align: right; }
+  .gas-source { margin-top: 12px; color: var(--faint); font-size: 0.82rem; }
+  .gas-row.is-stale .gas-price { color: var(--muted); }
   .gas-head { color: var(--faint); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid var(--border); }
   .gas-list { list-style: none; }
   .gas-row { border-bottom: 1px solid var(--border); }
@@ -338,6 +342,9 @@
   .gas-empty { color: var(--muted); }
   .gas-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 14px; }
   .gas-note, .gas-updated { color: var(--faint); font-size: 0.82rem; }
+  @media (max-width: 600px) {
+    .gas-head, .gas-row { gap: 8px; font-size: 0.9rem; }
+  }
   .gas-actions { display: inline-flex; align-items: center; gap: 12px; }
   .widget-btn {
     background: transparent; border: 1px solid var(--border); color: var(--text);
@@ -707,24 +714,29 @@
     <div class="portal-head">
   <div class="portal-head-text">
     <h2 class="portal-title">Gas</h2>
-    <p class="portal-sub">Every transaction pays a gas fee. Compare current gas prices across major EVM test networks.</p>
+    <p class="portal-sub">Every transaction pays a gas fee. Compare current gas prices and the cost of a simple transfer on major EVM chains.</p>
   </div>
   <a href="https://gas.ethwei.com/" target="_blank" rel="noopener noreferrer" class="app-open-link">Open full app →</a>
 </div>
 
     <div class="widget-card gas-widget" id="gas-widget"
+     data-api="https://gas.ethwei.com/api/transfer-costs"
      data-loading="Loading gas prices…"
      data-unavailable="Unavailable"
-     data-updated="Updated">
+     data-updated="Updated"
+     data-stale="Stale"
+     data-source="Source">
   <div class="gas-head">
     <span class="gas-col">Network</span>
     <span class="gas-col gas-col-price">Gas price</span>
+    <span class="gas-col gas-col-price">Transfer Cost</span>
   </div>
   <ul class="gas-list" id="gas-list" aria-live="polite">
     <li class="gas-row gas-empty">Loading gas prices…</li>
   </ul>
+  <p class="gas-source" id="gas-source">Transfer Cost is the USD cost of sending the chain&#39;s native token (21,000 gas).</p>
   <div class="gas-foot">
-    <span class="gas-note">Testnet prices, shown in gwei. Real-network fees differ.</span>
+    <span class="gas-note">Mainnet data, for reference only. Prices change every few seconds.</span>
     <span class="gas-actions">
       <span class="gas-updated" id="gas-updated"></span>
       <button type="button" class="widget-btn" id="gas-refresh">Refresh</button>

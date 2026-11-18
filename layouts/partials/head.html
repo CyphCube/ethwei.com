@@ -337,9 +337,13 @@
 
   .gas-widget { padding: 8px 20px 16px; }
   .gas-head, .gas-row {
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center; gap: 16px;
     padding: 12px 0;
   }
+  .gas-col-price, .gas-price { text-align: right; }
+  .gas-source { margin-top: 12px; color: var(--faint); font-size: 0.82rem; }
+  .gas-row.is-stale .gas-price { color: var(--muted); }
   .gas-head { color: var(--faint); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid var(--border); }
   .gas-list { list-style: none; }
   .gas-row { border-bottom: 1px solid var(--border); }
@@ -350,6 +354,9 @@
   .gas-empty { color: var(--muted); }
   .gas-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 14px; }
   .gas-note, .gas-updated { color: var(--faint); font-size: 0.82rem; }
+  @media (max-width: 600px) {
+    .gas-head, .gas-row { gap: 8px; font-size: 0.9rem; }
+  }
   .gas-actions { display: inline-flex; align-items: center; gap: 12px; }
   .widget-btn {
     background: transparent; border: 1px solid var(--border); color: var(--text);

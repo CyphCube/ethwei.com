@@ -13,6 +13,7 @@ enableRobotsTXT = false
     defi = "https://defi.ethwei.com/"
     playground = "https://play.ethwei.com/"
     faucet = "https://faucet.circle.com/"
+    gasApi = "https://gas.ethwei.com/api/transfer-costs"
 
 [languages]
   [languages.en]

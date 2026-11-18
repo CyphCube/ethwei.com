@@ -1,14 +1,19 @@
 <div class="widget-card gas-widget" id="gas-widget"
+     data-api="{{ .Site.Params.apps.gasApi }}"
      data-loading="{{ T "gas_loading" }}"
      data-unavailable="{{ T "gas_unavailable" }}"
-     data-updated="{{ T "gas_updated" }}">
+     data-updated="{{ T "gas_updated" }}"
+     data-stale="{{ T "gas_stale" }}"
+     data-source="{{ T "gas_source" }}">
   <div class="gas-head">
     <span class="gas-col">{{ T "gas_col_chain" }}</span>
     <span class="gas-col gas-col-price">{{ T "gas_col_price" }}</span>
+    <span class="gas-col gas-col-price">{{ T "gas_col_transfer" }}</span>
   </div>
   <ul class="gas-list" id="gas-list" aria-live="polite">
     <li class="gas-row gas-empty">{{ T "gas_loading" }}</li>
   </ul>
+  <p class="gas-source" id="gas-source">{{ T "gas_transfer_note" }}</p>
   <div class="gas-foot">
     <span class="gas-note">{{ T "gas_note" }}</span>
     <span class="gas-actions">
